@@ -127,6 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setInterval(() => {
       updateSlider(currentSlide + 1);
-    }, 7000);
+    }, 4000);
   }
 });

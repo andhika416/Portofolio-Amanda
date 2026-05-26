@@ -57,7 +57,7 @@ textarea {
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.12);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-    color: var(--surface);
+    color: #105666;
     transition:
         background 0.3s ease,
         border-color 0.3s ease,
@@ -72,7 +72,7 @@ main {
 .site-header.on-light {
     background: rgba(211, 150, 140, 0.94);
     border-bottom-color: rgba(255, 255, 255, 0.22);
-    color: var(--surface);
+    color: #105666;
     box-shadow: 0 12px 30px rgba(16, 86, 102, 0.12);
 }
 
@@ -107,7 +107,7 @@ main {
 
 .site-nav a:hover {
     background: rgba(255, 255, 255, 0.18);
-    color: var(--text-light);
+    color: #105666;
 }
 
 .site-nav a.active {
@@ -116,12 +116,12 @@ main {
 
 .site-header.on-light .site-nav a:hover {
     background: rgba(255, 255, 255, 0.18);
-    color: var(--surface);
+    color: #105666;
 }
 
 .site-header.on-light .site-nav a.active {
     background: rgba(255, 255, 255, 0.22);
-    color: var(--surface);
+    color: #105666;
 }
 
 .section {
@@ -239,11 +239,12 @@ main {
     font-size: clamp(1.8rem, 3.4vw, 2.8rem);
     margin: 1.2rem 0 1rem;
     line-height: 1.05;
+    color: #105666;
 }
 
 .hero-copy p {
     max-width: 38rem;
-    color: var(--secondary);
+    color: #ffffff;
     font-size: 1.05rem;
 }
 
@@ -290,19 +291,20 @@ main {
     position: relative;
     display: grid;
     place-items: center;
+    align-self: end;
     z-index: 2;
 }
 
 .profile-frame {
-    width: min(560px, 60vw);
-    aspect-ratio: 4 / 3;
+    width: min(780px, 100%);
+    height: min(82vh, 920px);
     border: none;
     border-radius: 0;
     display: grid;
-    place-items: center;
+    place-items: end center;
     position: relative;
     background: transparent;
-    overflow: hidden;
+    overflow: visible;
     z-index: 3;
 }
 
@@ -311,8 +313,8 @@ main {
     width: 100%;
     height: 100%;
     display: grid;
-    place-items: center;
-    overflow: hidden;
+    place-items: end center;
+    overflow: visible;
 }
 
 .avatar-slide {
@@ -320,7 +322,7 @@ main {
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center bottom;
     border-radius: 0;
     background: transparent;
@@ -712,6 +714,26 @@ main {
     font-size: 1.1rem;
 }
 
+.site-footer {
+    background:
+        linear-gradient(180deg, rgba(211, 150, 140, 0.96), rgba(199, 138, 128, 1));
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem 0;
+    color: #ffffff;
+}
+
+.footer-shell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
 .animate {
     opacity: 0;
     transform: translateY(32px);
@@ -768,5 +790,7 @@ main {
 
     .profile-frame {
         width: 100%;
+        height: min(72vh, 660px);
     }
+
 }
