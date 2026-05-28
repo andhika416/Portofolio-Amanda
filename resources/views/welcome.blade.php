@@ -66,81 +66,85 @@
                     <h2>Pengalaman</h2>
                 </div>
                 <div class="container timeline animate">
-                    <div class="timeline-item timeline-item-span-6">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Magang • 2025-2026</span>
-                            <h3>Balai Keselamatan dan Kesehatan Kerja Surabaya</h3>
-                            <ul class="timeline-list">
-                                <li>Melaksanakan pengujian faktor bahaya di lingkungan kerja dan ambien dengan parameter fisika dan kimia sesuai Permenaker No. 5 Tahun 2018 dan SNI yang berlaku.</li>
-                                <li>Menyusun lebih dari 15 Laporan Hasil Uji (LHU) dengan interpretasi kesesuaian terhadap NAB dan baku mutu lingkungan kerja.</li>
-                            </ul>
+                    <div class="timeline-column">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Magang • 2025-2026</span>
+                                <h3>Balai Keselamatan dan Kesehatan Kerja Surabaya</h3>
+                                <ul class="timeline-list">
+                                    <li>Melaksanakan pengujian faktor bahaya di lingkungan kerja dan ambien dengan parameter fisika dan kimia sesuai Permenaker No. 5 Tahun 2018 dan SNI yang berlaku.</li>
+                                    <li>Menyusun lebih dari 15 Laporan Hasil Uji (LHU) dengan interpretasi kesesuaian terhadap NAB dan baku mutu lingkungan kerja.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Proyek Penelitian Skripsi • 2024-2025</span>
+                                <h3>Penelitian Single Aged Garlic</h3>
+                                <ul class="timeline-list">
+                                    <li>Melakukan penelitian evaluasi efektivitas Single Aged Garlic dalam memengaruhi kadar kolesterol dan trigliserida pada hewan mencit yang diberi pakan tinggi kalori.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Proyek Riset • 2024</span>
+                                <h3>Proyek Riset Kesehatan Lingkungan</h3>
+                                <ul class="timeline-list">
+                                    <li>Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu.</li>
+                                    <li>Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Proyek Riset Teknik Analisis Biologi Molekuler • 2023</span>
+                                <h3>Riset Biologi Molekuler</h3>
+                                <ul class="timeline-list">
+                                    <li>Isolasi dan identifikasi RNA pada sel hewan.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="timeline-item timeline-item-span-6">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Magang • 2024</span>
-                            <h3>Dinas Lingkungan Hidup Kab. Nganjuk</h3>
-                            <ul class="timeline-list">
-                                <li>Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, dan analisis data dengan parameter fisika, kimia, dan biologi.</li>
-                                <li>Proyek riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk.</li>
-                            </ul>
+                    <div class="timeline-column">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Asisten Dosen • 2025</span>
+                                <h3>Universitas Negeri Malang</h3>
+                                <ul class="timeline-list">
+                                    <li>Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan kerja di laboratorium.</li>
+                                    <li>Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item timeline-item-span-4">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Asisten Dosen • 2025</span>
-                            <h3>Universitas Negeri Malang</h3>
-                            <ul class="timeline-list">
-                                <li>Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan kerja di laboratorium.</li>
-                                <li>Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa.</li>
-                            </ul>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Magang • 2024</span>
+                                <h3>Dinas Lingkungan Hidup Kab. Nganjuk</h3>
+                                <ul class="timeline-list">
+                                    <li>Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, dan analisis data dengan parameter fisika, kimia, dan biologi.</li>
+                                    <li>Proyek riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item timeline-item-span-8">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Proyek Penelitian Skripsi • 2024-2025</span>
-                            <h3>Penelitian Single Aged Garlic</h3>
-                            <ul class="timeline-list">
-                                <li>Melakukan penelitian evaluasi efektivitas Single Aged Garlic dalam memengaruhi kadar kolesterol dan trigliserida pada hewan mencit yang diberi pakan tinggi kalori.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item timeline-item-span-8">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Proyek Riset • 2024</span>
-                            <h3>Proyek Riset Kesehatan Lingkungan</h3>
-                            <ul class="timeline-list">
-                                <li>Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu.</li>
-                                <li>Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item timeline-item-span-12">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Proyek Riset Mikrobiologi • 2024</span>
-                            <h3>Riset Mikrobiologi</h3>
-                            <ul class="timeline-list">
-                                <li>Pembuatan yoghurt dengan sari wortel sebagai bahan dasar.</li>
-                                <li>Uji kualitas mikrobiologi makanan dalam kaleng berdasarkan angka lempeng total koloni bakteri.</li>
-                                <li>Pewarnaan gram dan pengukuran sel bakteri.</li>
-                                <li>Uji kualitas mikrobiologi air kemasan berdasarkan nilai MPN coliform.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item timeline-item-span-4">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <span class="timeline-meta">Proyek Riset Teknik Analisis Biologi Molekuler • 2023</span>
-                            <h3>Riset Biologi Molekuler</h3>
-                            <ul class="timeline-list">
-                                <li>Isolasi dan identifikasi RNA pada sel hewan.</li>
-                            </ul>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-meta">Proyek Riset Mikrobiologi • 2024</span>
+                                <h3>Riset Mikrobiologi</h3>
+                                <ul class="timeline-list">
+                                    <li>Pembuatan yoghurt dengan sari wortel sebagai bahan dasar.</li>
+                                    <li>Uji kualitas mikrobiologi makanan dalam kaleng berdasarkan angka lempeng total koloni bakteri.</li>
+                                    <li>Pewarnaan gram dan pengukuran sel bakteri.</li>
+                                    <li>Uji kualitas mikrobiologi air kemasan berdasarkan nilai MPN Coliform.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,21 +157,19 @@
                 </div>
                 <div class="container skills-grid animate">
                     <div class="skill-group">
-                        <h3>Keahlian Biologi</h3>
+                        <h3>Keselamatan dan Kesehatan Kerja</h3>
                         <ul>
-                            <li>Microscopy</li>
-                            <li>PCR &amp; Analisis Genetik</li>
-                            <li>Cell Culture</li>
-                            <li>Data Analysis Biologi</li>
+                            <li>Identifikasi Bahaya dan Risiko Kerja</li>
+                            <li>Pengujian Faktor Bahaya Lingkungan Kerja</li>
                         </ul>
                     </div>
                     <div class="skill-group">
-                        <h3>Keahlian Tambahan</h3>
+                        <h3>Laboratorium</h3>
                         <ul>
-                            <li>Data Visualization</li>
-                            <li>Scientific Writing</li>
-                            <li>Programming Python</li>
-                            <li>Komunikasi Digital</li>
+                            <li>Quality Control Laboratorium</li>
+                            <li>Analisis Mikrobiologi</li>
+                            <li>Isolasi RNA</li>
+                            <li>Elektroforesis</li>
                         </ul>
                     </div>
                 </div>
