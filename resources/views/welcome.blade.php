@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ config('app.name', 'Amanda Portfolio') }}</title>
+        <title>{{ config('app.name', 'Portofolio | Amanda') }}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('portfolio.css') }}">
+        <link rel="stylesheet" href="/portfolio.css">
     </head>
     <body>
+        @php
+            $imagePath = static fn (string $file): string => '/images/' . rawurlencode($file);
+        @endphp
         @include('partials.navbar')
 
         <main>
@@ -19,13 +22,18 @@
                     <div class="hero-copy animate">
                         <h1>Amanda Sasmi Hanifa</h1>
                         <p>Hai! Aku Amanda Sasmi Hanifa, lulusan S1 Biologi yang tertarik di bidang laboratorium, K3 dan kesehatan lingkungan. Suka belajar hal baru, detail-oriented, dan senang berkembang lewat pengalaman baru. Percaya bahwa science dan safety bisa jadi hal kecil yang memberi impact besar.</p>
-                        <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                        <a href="https://wa.me/62859155186165" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2c-5.5 0-9.97 4.47-9.97 9.98 0 1.76.46 3.47 1.33 4.98L2 22l5.2-1.36a9.95 9.95 0 0 0 4.81 1.23h.01c5.5 0 9.98-4.48 9.98-9.98 0-2.66-1.04-5.16-2.95-7.01Zm-7.03 15.24h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.09.81.83-3.01-.2-.31a8.28 8.28 0 0 1-1.28-4.38c0-4.58 3.73-8.31 8.31-8.31 2.21 0 4.29.86 5.85 2.43a8.24 8.24 0 0 1 2.44 5.88c0 4.58-3.73 8.31-8.32 8.31Zm4.56-6.22c-.25-.12-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.02 2.6.12.17 1.76 2.69 4.26 3.77.59.26 1.06.42 1.42.54.6.19 1.15.16 1.59.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"/>
+                            </svg>
+                            <span>Hubungi Saya</span>
+                        </a>
                     </div>
                     <div class="hero-visual animate">
                         <div class="profile-frame">
                             <div class="avatar-slider" aria-label="Slider foto profil">
-                                <img class="avatar-slide avatar-slide-photo-1 active" src="{{ asset('images/Foto 1.png') }}" alt="Foto profil 1" />
-                                <img class="avatar-slide" src="{{ asset('images/Foto 2.png') }}" alt="Foto profil 2" />
+                                <img class="avatar-slide avatar-slide-photo-1 active" src="{{ $imagePath('Foto 1.png') }}" alt="Foto profil 1" />
+                                <img class="avatar-slide" src="{{ $imagePath('Foto 2.png') }}" alt="Foto profil 2" />
                             </div>
                         </div>
                         <div class="hero-decoration hero-dec-1"></div>
@@ -46,8 +54,8 @@
                         <p>Saat ini, saya terus mengembangkan pengetahuan dan keterampilan di bidang K3, pengujian lingkungan kerja, serta administrasi laboratorium dan profesional. Saya memiliki ketertarikan untuk berkontribusi dalam menciptakan lingkungan kerja yang aman, sehat, dan produktif melalui pendekatan ilmiah, ketelitian, dan kemampuan adaptasi yang baik.</p>
                     </article>
                     <div class="about-visual">
-                        <div class="bio-shape"></div>
-                        <div class="bio-icon">DNA</div>
+                        <div class="about-portrait-accent" aria-hidden="true"></div>
+                        <img class="about-portrait" src="{{ $imagePath('Foto 3.png') }}" alt="Foto Amanda Sasmi Hanifa" />
                     </div>
                 </div>
             </section>
@@ -191,6 +199,6 @@
 
         @include('partials.footer')
 
-        <script src="{{ asset('portfolio.js') }}"></script>
+        <script src="/portfolio.js"></script>
     </body>
 </html>
