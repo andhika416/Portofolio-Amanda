@@ -26,7 +26,7 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2c-5.5 0-9.97 4.47-9.97 9.98 0 1.76.46 3.47 1.33 4.98L2 22l5.2-1.36a9.95 9.95 0 0 0 4.81 1.23h.01c5.5 0 9.98-4.48 9.98-9.98 0-2.66-1.04-5.16-2.95-7.01Zm-7.03 15.24h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.09.81.83-3.01-.2-.31a8.28 8.28 0 0 1-1.28-4.38c0-4.58 3.73-8.31 8.31-8.31 2.21 0 4.29.86 5.85 2.43a8.24 8.24 0 0 1 2.44 5.88c0 4.58-3.73 8.31-8.32 8.31Zm4.56-6.22c-.25-.12-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.02 2.6.12.17 1.76 2.69 4.26 3.77.59.26 1.06.42 1.42.54.6.19 1.15.16 1.59.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"/>
                             </svg>
-                            <span>Hubungi Saya</span>
+                            <span>Kontak</span>
                         </a>
                     </div>
                     <div class="hero-visual animate">
@@ -262,43 +262,46 @@
             <!-- Contact Section -->
             <section id="contact" class="section contact-section light">
                 <div class="container section-header animate">
-                    <h2>Hubungi Saya</h2>
+                    <h2>Kontak</h2>
                 </div>
                 <div class="container contact-grid animate">
-                    <form class="contact-form" action="#" method="post">
-                        <label>
-                            <span>Nama</span>
-                            <input type="text" placeholder="Masukkan nama" required />
-                        </label>
-                        <label>
-                            <span>Email</span>
-                            <input type="email" placeholder="email@domain.com" required />
-                        </label>
-                        <label>
-                            <span>Pesan</span>
-                            <textarea rows="5" placeholder="Tulis pesan Anda" required></textarea>
-                        </label>
-                        <button type="submit" class="btn btn-secondary">Kirim Pesan</button>
-                    </form>
                     <div class="contact-info">
-                        <p>Senang bertemu dengan Anda secara virtual. Silakan kirim pesan atau temukan saya melalui profil profesional berikut.</p>
-                        <div class="social-links">
-                            <a href="mailto:email@domain.com" aria-label="Email">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M3 5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25v13.5A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25Zm1.5.56v12.94c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75V5.81l-7.5 5.1-7.5-5.1Zm1.69-.81 6.06 4.13 6.06-4.13H5.19Z" />
-                                </svg>
-                            </a>
-                            <a href="#contact" aria-label="LinkedIn">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <a class="contact-card contact-linkedin" href="http://www.linkedin.com/in/amandasasmihanifa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Amanda Sasmi Hanifa">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
                                     <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM0 8.75h5v14.5H0v-14.5Zm7.5 0h4.8v2.08h.07c.67-1.27 2.3-2.61 4.73-2.61 5.06 0 6 3.34 6 7.68v8.35h-5V16.8c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.74 1.85-2.74 3.76v8.09h-5V8.75Z" />
                                 </svg>
-                            </a>
-                            <a href="#contact" aria-label="Instagram">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 7.15a4.85 4.85 0 1 1 0 9.7 4.85 4.85 0 0 1 0-9.7Zm6.88-.85a1.13 1.13 0 1 1 0 2.25 1.13 1.13 0 0 1 0-2.25ZM12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" />
+                            </span>
+                            <span class="contact-copy">
+                                <strong>LinkedIn</strong>
+                                <span>amandasasmihanifa</span>
+                            </span>
+                            <span class="contact-action">Buka Profil</span>
+                        </a>
+                        <a class="contact-card contact-whatsapp" href="https://wa.me/62859155186165" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Amanda Sasmi Hanifa">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2c-5.5 0-9.97 4.47-9.97 9.98 0 1.76.46 3.47 1.33 4.98L2 22l5.2-1.36a9.95 9.95 0 0 0 4.81 1.23h.01c5.5 0 9.98-4.48 9.98-9.98 0-2.66-1.04-5.16-2.95-7.01Zm-7.03 15.24h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.09.81.83-3.01-.2-.31a8.28 8.28 0 0 1-1.28-4.38c0-4.58 3.73-8.31 8.31-8.31 2.21 0 4.29.86 5.85 2.43a8.24 8.24 0 0 1 2.44 5.88c0 4.58-3.73 8.31-8.32 8.31Zm4.56-6.22c-.25-.12-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.02 2.6.12.17 1.76 2.69 4.26 3.77.59.26 1.06.42 1.42.54.6.19 1.15.16 1.59.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z" />
                                 </svg>
-                            </a>
-                        </div>
+                            </span>
+                            <span class="contact-copy">
+                                <strong>WhatsApp</strong>
+                                <span>0859155186165</span>
+                            </span>
+                            <span class="contact-action">Chat Langsung</span>
+                        </a>
+                        <a class="contact-card contact-email" href="mailto:amandahanifa915@gmail.com" aria-label="Email Amanda Sasmi Hanifa">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25v13.5A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25Zm1.5.56v12.94c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75V5.81l-7.5 5.1-7.5-5.1Zm1.69-.81 6.06 4.13 6.06-4.13H5.19Z" />
+                                </svg>
+                            </span>
+                            <span class="contact-copy">
+                                <strong>Email</strong>
+                                <span>amandahanifa915@gmail.com</span>
+                            </span>
+                            <span class="contact-action">Kirim Email</span>
+                        </a>
                     </div>
                 </div>
             </section>

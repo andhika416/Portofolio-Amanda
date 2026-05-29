@@ -33,9 +33,44 @@ $certificationCatalog = [
         'logo' => 'GNIK.jpg',
         'certificates' => [
             [
+                'title' => 'Adaptability',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Adaptability.pdf',
+            ],
+            [
+                'title' => 'Design Thinking',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Design Thinking.pdf',
+            ],
+            [
+                'title' => 'Digital Disruption & Transformation',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Digital Disruption & Transformation.pdf',
+            ],
+            [
+                'title' => 'Digital Literacy',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Digital Literacy.pdf',
+            ],
+            [
+                'title' => 'Emotional Intelligence',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Emotional Intelligence.pdf',
+            ],
+            [
+                'title' => 'Emotional Resilience',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Emotional Resilience.pdf',
+            ],
+            [
                 'title' => 'Integrity at Work',
-                'subtitle' => 'Program Kompetensi dan Pengembangan Diri',
+                'subtitle' => 'Essential Skills Certificate',
                 'file' => 'Integrity at Work.pdf',
+            ],
+            [
+                'title' => 'Social Influence',
+                'subtitle' => 'Essential Skills Certificate',
+                'file' => 'Social Influence.pdf',
             ],
         ],
     ],

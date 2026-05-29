@@ -150,48 +150,38 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   const renderCertificatePreview = async (panel, previewSrc) => {
-    const previewPages = panel.querySelector('#cert-preview-pages');
+    const previewFrame = panel.querySelector('#cert-preview-frame');
     const previewFrameWrap = panel.querySelector('.cert-preview-frame-wrap');
-    if (!previewPages || !previewFrameWrap || !window.pdfjsLib || !previewSrc) return;
+    if (!previewFrame || !previewFrameWrap || !previewSrc) return;
 
     const renderToken = `${Date.now()}`;
-    previewPages.dataset.renderToken = renderToken;
-    previewPages.innerHTML = '';
+    previewFrame.dataset.renderToken = renderToken;
     previewFrameWrap.scrollTop = 0;
     previewFrameWrap.style.height = '';
+    previewFrame.removeAttribute('src');
 
-    const loadingTask = window.pdfjsLib.getDocument(previewSrc);
-    const pdf = await loadingTask.promise;
-    const firstPage = await pdf.getPage(1);
-    const baseViewport = firstPage.getViewport({ scale: 1 });
-    const scale = previewFrameWrap.clientWidth / baseViewport.width;
+    if (window.pdfjsLib) {
+      try {
+        const loadingTask = window.pdfjsLib.getDocument(previewSrc);
+        const pdf = await loadingTask.promise;
+        const firstPage = await pdf.getPage(1);
+        const baseViewport = firstPage.getViewport({ scale: 1 });
+        const previewWidth = previewFrameWrap.clientWidth;
 
-    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
-      const page = await pdf.getPage(pageNumber);
-      const viewport = page.getViewport({ scale });
-      const pageContainer = document.createElement('div');
-      pageContainer.className = 'cert-preview-page';
-
-      const canvas = document.createElement('canvas');
-      const context = canvas.getContext('2d');
-      canvas.width = viewport.width;
-      canvas.height = viewport.height;
-      pageContainer.appendChild(canvas);
-      previewPages.appendChild(pageContainer);
-
-      await page.render({
-        canvasContext: context,
-        viewport,
-      }).promise;
-
-      if (previewPages.dataset.renderToken !== renderToken) return;
-      canvas.style.width = '100%';
-      canvas.style.height = 'auto';
-
-      if (pageNumber === 1) {
-        previewFrameWrap.style.height = `${Math.ceil(viewport.height)}px`;
+        if (previewWidth > 0) {
+          const previewHeight = Math.ceil(
+            previewWidth * (baseViewport.height / baseViewport.width)
+          );
+          previewFrameWrap.style.height = `${previewHeight}px`;
+        }
+      } catch (error) {
+        previewFrameWrap.style.height = '1120px';
       }
     }
+
+    if (previewFrame.dataset.renderToken !== renderToken) return;
+
+    previewFrame.src = `${previewSrc}#page=1&zoom=page-fit&toolbar=0&navpanes=0&scrollbar=1`;
   };
 
   document.querySelectorAll('.cert-detail-item').forEach((item) => {

@@ -6,6 +6,7 @@
     <div class="container header-inner">
         <a href="{{ request()->routeIs('home') ? '#hero' : $homeUrl }}" class="brand">Portofolio</a>
         <nav class="site-nav" aria-label="Navigasi halaman">
+            <a href="{{ $sectionPrefix }}#hero">Beranda</a>
             <a href="{{ $sectionPrefix }}#about">Tentang</a>
             <a href="{{ $sectionPrefix }}#experience">Pengalaman</a>
             <a href="{{ $sectionPrefix }}#skills">Kemampuan</a>

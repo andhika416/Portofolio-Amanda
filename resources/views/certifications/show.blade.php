@@ -53,7 +53,12 @@
 
                         <div class="cert-detail-preview">
                             <div class="cert-preview-frame-wrap" data-cert-preview="{{ $imagePath($firstCertificate['file']) }}">
-                                <div id="cert-preview-pages" class="cert-preview-pages" aria-label="Preview Sertifikat {{ $provider['name'] }}"></div>
+                                <iframe
+                                    id="cert-preview-frame"
+                                    class="cert-preview-frame"
+                                    title="Preview Sertifikat {{ $provider['name'] }}"
+                                    loading="lazy"
+                                ></iframe>
                             </div>
                         </div>
                     </div>
