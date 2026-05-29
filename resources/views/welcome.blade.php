@@ -182,19 +182,79 @@
                 </div>
                 <div class="container cert-cards animate">
                     <div class="cert-card">
-                        <h3>Fundamentals of Molecular Biology</h3>
-                        <span>Institusi Biologi Modern • 2023</span>
-                        <a href="#contact">Lihat Sertifikat</a>
+                        <div class="cert-brand">
+                            <div class="cert-logo-frame">
+                                <img src="{{ $imagePath($certificationCatalog['kemnaker']['logo']) }}" alt="Logo Kemnaker" class="cert-logo-image" />
+                            </div>
+                            <div class="cert-copy">
+                                <h3>{{ $certificationCatalog['kemnaker']['name'] }}</h3>
+                                <span>{{ $certificationCatalog['kemnaker']['organization'] }}</span>
+                            </div>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-pill">{{ count($certificationCatalog['kemnaker']['certificates']) }} Sertifikat</div>
+                            <a href="{{ route('certifications.show', 'kemnaker') }}">Lihat Sertifikat</a>
+                        </div>
                     </div>
                     <div class="cert-card">
-                        <h3>Research Methods in Ecology</h3>
-                        <span>Academia Gen Z • 2024</span>
-                        <a href="#contact">Lihat Sertifikat</a>
+                        <div class="cert-brand">
+                            <div class="cert-logo-frame">
+                                <img src="{{ $imagePath($certificationCatalog['bnsp']['logo']) }}" alt="Logo BNSP" class="cert-logo-image" />
+                            </div>
+                            <div class="cert-copy">
+                                <h3>{{ $certificationCatalog['bnsp']['name'] }}</h3>
+                                <span>{{ $certificationCatalog['bnsp']['organization'] }}</span>
+                            </div>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-pill">{{ count($certificationCatalog['bnsp']['certificates']) }} Sertifikat</div>
+                            <a href="{{ route('certifications.show', 'bnsp') }}">Lihat Sertifikat</a>
+                        </div>
                     </div>
                     <div class="cert-card">
-                        <h3>Data Science for Biology</h3>
-                        <span>BioTech Institute • 2024</span>
-                        <a href="#contact">Lihat Sertifikat</a>
+                        <div class="cert-brand">
+                            <div class="cert-logo-frame">
+                                <img src="{{ $imagePath($certificationCatalog['gnik']['logo']) }}" alt="Logo GNIK" class="cert-logo-image" />
+                            </div>
+                            <div class="cert-copy">
+                                <h3>{{ $certificationCatalog['gnik']['name'] }}</h3>
+                                <span>{{ $certificationCatalog['gnik']['organization'] }}</span>
+                            </div>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-pill">{{ count($certificationCatalog['gnik']['certificates']) }} Sertifikat</div>
+                            <a href="{{ route('certifications.show', 'gnik') }}">Lihat Sertifikat</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-brand">
+                            <div class="cert-logo-frame">
+                                <img src="{{ $imagePath($certificationCatalog['makin-ahli']['logo']) }}" alt="Logo Makin Ahli" class="cert-logo-image" />
+                            </div>
+                            <div class="cert-copy">
+                                <h3>{{ $certificationCatalog['makin-ahli']['name'] }}</h3>
+                                <span>{{ $certificationCatalog['makin-ahli']['organization'] }}</span>
+                            </div>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-pill">{{ count($certificationCatalog['makin-ahli']['certificates']) }} Sertifikat</div>
+                            <a href="{{ route('certifications.show', 'makin-ahli') }}">Lihat Sertifikat</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-brand">
+                            <div class="cert-logo-frame">
+                                <img src="{{ $imagePath($certificationCatalog['microsoft']['logo']) }}" alt="Logo Microsoft" class="cert-logo-image" />
+                            </div>
+                            <div class="cert-copy">
+                                <h3>{{ $certificationCatalog['microsoft']['name'] }}</h3>
+                                <span>{{ $certificationCatalog['microsoft']['organization'] }}</span>
+                            </div>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-pill">{{ count($certificationCatalog['microsoft']['certificates']) }} Sertifikat</div>
+                            <a href="{{ route('certifications.show', 'microsoft') }}">Lihat Sertifikat</a>
+                        </div>
                     </div>
                 </div>
             </section>

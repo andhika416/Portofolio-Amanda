@@ -80,8 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navLinks.forEach((link) => {
     link.addEventListener('click', function (event) {
-      event.preventDefault();
       const targetId = this.getAttribute('href');
+      if (!targetId || !targetId.startsWith('#')) {
+        return;
+      }
+
+      event.preventDefault();
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         setActiveSection(targetElement.id);
@@ -129,4 +133,84 @@ document.addEventListener('DOMContentLoaded', function () {
       updateSlider(currentSlide + 1);
     }, 4000);
   }
+
+  const updateCertificatePreview = (panel, item) => {
+    const previewSrc = item.getAttribute('data-cert-preview');
+    const previewFrameWrap = panel.querySelector('.cert-preview-frame-wrap');
+
+    panel.querySelectorAll('.cert-detail-item').forEach((entry) => {
+      entry.classList.toggle('active', entry === item);
+    });
+
+    if (previewFrameWrap) {
+      previewFrameWrap.setAttribute('data-cert-preview', previewSrc);
+    }
+
+    renderCertificatePreview(panel, previewSrc);
+  };
+
+  const renderCertificatePreview = async (panel, previewSrc) => {
+    const previewPages = panel.querySelector('#cert-preview-pages');
+    const previewFrameWrap = panel.querySelector('.cert-preview-frame-wrap');
+    if (!previewPages || !previewFrameWrap || !window.pdfjsLib || !previewSrc) return;
+
+    const renderToken = `${Date.now()}`;
+    previewPages.dataset.renderToken = renderToken;
+    previewPages.innerHTML = '';
+    previewFrameWrap.scrollTop = 0;
+    previewFrameWrap.style.height = '';
+
+    const loadingTask = window.pdfjsLib.getDocument(previewSrc);
+    const pdf = await loadingTask.promise;
+    const firstPage = await pdf.getPage(1);
+    const baseViewport = firstPage.getViewport({ scale: 1 });
+    const scale = previewFrameWrap.clientWidth / baseViewport.width;
+
+    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+      const page = await pdf.getPage(pageNumber);
+      const viewport = page.getViewport({ scale });
+      const pageContainer = document.createElement('div');
+      pageContainer.className = 'cert-preview-page';
+
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      pageContainer.appendChild(canvas);
+      previewPages.appendChild(pageContainer);
+
+      await page.render({
+        canvasContext: context,
+        viewport,
+      }).promise;
+
+      if (previewPages.dataset.renderToken !== renderToken) return;
+      canvas.style.width = '100%';
+      canvas.style.height = 'auto';
+
+      if (pageNumber === 1) {
+        previewFrameWrap.style.height = `${Math.ceil(viewport.height)}px`;
+      }
+    }
+  };
+
+  document.querySelectorAll('.cert-detail-item').forEach((item) => {
+    const panel = item.closest('.cert-detail');
+    if (!panel) return;
+
+    item.addEventListener('click', () => {
+      updateCertificatePreview(panel, item);
+    });
+  });
+
+  document.querySelectorAll('.cert-detail').forEach((panel) => {
+    const firstItem = panel.querySelector('.cert-detail-item.active') || panel.querySelector('.cert-detail-item');
+    const initialPreviewSrc =
+      firstItem?.getAttribute('data-cert-preview') ||
+      panel.querySelector('.cert-preview-frame-wrap')?.getAttribute('data-cert-preview');
+
+    if (initialPreviewSrc) {
+      renderCertificatePreview(panel, initialPreviewSrc);
+    }
+  });
 });
