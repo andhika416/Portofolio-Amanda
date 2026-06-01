@@ -12,6 +12,7 @@
     <body>
         @php
             $imagePath = static fn (string $file): string => '/images/' . rawurlencode($file);
+            $galleryImages = ['1.JPG', '2.JPG', '3.jpg', '4.JPG', '5.JPG', '6.JPG'];
         @endphp
         @include('partials.navbar')
 
@@ -171,6 +172,24 @@
                             <li>Isolasi RNA</li>
                             <li>Elektroforesis</li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="section gallery-section">
+                <div class="container section-header animate">
+                    <h2>Galeri</h2>
+                </div>
+                <div class="container gallery-slider animate">
+                    <div class="gallery-track">
+                        @foreach (range(1, 3) as $duplicateIndex)
+                            @foreach ($galleryImages as $galleryImage)
+                                <figure class="gallery-card" @if ($duplicateIndex !== 2) aria-hidden="true" @endif>
+                                    <img src="{{ $imagePath($galleryImage) }}" alt="Galeri Amanda {{ $loop->iteration }}" class="gallery-image" />
+                                </figure>
+                            @endforeach
+                        @endforeach
                     </div>
                 </div>
             </section>

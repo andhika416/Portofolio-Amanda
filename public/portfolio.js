@@ -134,6 +134,137 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 4000);
   }
 
+  const gallerySlider = document.querySelector('.gallery-slider');
+  if (gallerySlider) {
+    const galleryTrack = gallerySlider.querySelector('.gallery-track');
+    const galleryCards = Array.from(gallerySlider.querySelectorAll('.gallery-card'));
+    const setsCount = 3;
+    const originalCardCount = Math.floor(galleryCards.length / setsCount);
+    const middleSetIndex = 1;
+    const thirdSetIndex = 2;
+    const galleryStepMs = 1800;
+    const galleryTransition = 'transform 0.85s cubic-bezier(0.22, 1, 0.36, 1)';
+    let isGalleryPaused = false;
+    let activeCenteredCard = null;
+    let activeLocalIndex = 0;
+    let activeSetIndex = middleSetIndex;
+    let galleryInterval = null;
+    let isTransitioning = false;
+    let pendingWrapReset = false;
+
+    const getCard = (setIndex, localIndex) =>
+      galleryCards[setIndex * originalCardCount + localIndex] || null;
+
+    const getCenteredOffset = (card) => {
+      if (!card) return 0;
+      return card.offsetLeft - (gallerySlider.clientWidth - card.offsetWidth) / 2;
+    };
+
+    const applyGalleryOffset = (offset, withTransition = true) => {
+      if (!galleryTrack) return;
+      galleryTrack.style.transition = withTransition ? galleryTransition : 'none';
+      galleryTrack.style.transform = `translate3d(${-offset}px, 0, 0)`;
+    };
+
+    const setCenteredCard = (card) => {
+      if (card === activeCenteredCard) return;
+      if (activeCenteredCard) {
+        activeCenteredCard.classList.remove('is-centered');
+      }
+      if (card) {
+        card.classList.add('is-centered');
+      }
+      activeCenteredCard = card;
+    };
+
+    const setCenteredCardWithoutAnimation = (card) => {
+      if (!card) return;
+
+      if (activeCenteredCard && activeCenteredCard !== card) {
+        activeCenteredCard.classList.add('no-zoom-transition');
+      }
+
+      card.classList.add('no-zoom-transition');
+      setCenteredCard(card);
+
+      requestAnimationFrame(() => {
+        if (activeCenteredCard) {
+          activeCenteredCard.classList.remove('no-zoom-transition');
+        }
+        galleryCards.forEach((entry) => {
+          if (entry !== activeCenteredCard) {
+            entry.classList.remove('no-zoom-transition');
+          }
+        });
+      });
+    };
+
+    const syncGalleryPosition = (setIndex, localIndex, withTransition = true) => {
+      const card = getCard(setIndex, localIndex);
+      if (!card) return;
+      applyGalleryOffset(getCenteredOffset(card), withTransition);
+      setCenteredCard(card);
+    };
+
+    const resetToMiddleSet = () => {
+      activeSetIndex = middleSetIndex;
+      const card = getCard(activeSetIndex, activeLocalIndex);
+      if (!card) return;
+      applyGalleryOffset(getCenteredOffset(card), false);
+      setCenteredCardWithoutAnimation(card);
+    };
+
+    const moveToNextGalleryCard = () => {
+      if (isGalleryPaused || isTransitioning || originalCardCount === 0) return;
+
+      isTransitioning = true;
+      const nextLocalIndex = (activeLocalIndex + 1) % originalCardCount;
+      const nextSetIndex =
+        activeLocalIndex === originalCardCount - 1 ? thirdSetIndex : activeSetIndex;
+
+      activeLocalIndex = nextLocalIndex;
+      activeSetIndex = nextSetIndex;
+      pendingWrapReset = activeSetIndex === thirdSetIndex;
+      syncGalleryPosition(activeSetIndex, activeLocalIndex, true);
+    };
+
+    gallerySlider.addEventListener('mouseenter', () => {
+      isGalleryPaused = true;
+    });
+
+    gallerySlider.addEventListener('mouseleave', () => {
+      isGalleryPaused = false;
+    });
+
+    activeLocalIndex = 0;
+    activeSetIndex = middleSetIndex;
+    syncGalleryPosition(activeSetIndex, activeLocalIndex, false);
+
+    galleryInterval = window.setInterval(moveToNextGalleryCard, galleryStepMs);
+
+    galleryTrack?.addEventListener('transitionend', (event) => {
+      if (event.propertyName !== 'transform') return;
+
+      if (pendingWrapReset) {
+        pendingWrapReset = false;
+        requestAnimationFrame(() => {
+          resetToMiddleSet();
+          requestAnimationFrame(() => {
+            galleryTrack.style.transition = galleryTransition;
+            isTransitioning = false;
+          });
+        });
+        return;
+      }
+
+      isTransitioning = false;
+    });
+
+    window.addEventListener('resize', () => {
+      syncGalleryPosition(activeSetIndex, activeLocalIndex, false);
+    });
+  }
+
   const updateCertificatePreview = (panel, item) => {
     const previewSrc = item.getAttribute('data-cert-preview');
     const previewFrameWrap = panel.querySelector('.cert-preview-frame-wrap');

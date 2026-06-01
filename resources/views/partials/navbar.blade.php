@@ -10,6 +10,7 @@
             <a href="{{ $sectionPrefix }}#about">Tentang</a>
             <a href="{{ $sectionPrefix }}#experience">Pengalaman</a>
             <a href="{{ $sectionPrefix }}#skills">Kemampuan</a>
+            <a href="{{ $sectionPrefix }}#gallery">Galeri</a>
             <a href="{{ $sectionPrefix }}#certifications">Sertifikasi</a>
             <a href="{{ $sectionPrefix }}#contact">Kontak</a>
         </nav>
