@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-page-title-in="{{ $provider['name'] }} | Sertifikasi Amanda" data-page-title-en="{{ $provider['name'] }} | Amanda Certifications">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,19 +21,19 @@
             <section class="section certifications-section cert-page">
                 <div class="container cert-page-head animate visible">
                     <div class="cert-page-intro">
-                        <p class="cert-page-label">Certification Gallery</p>
-                        <h1>Sertifikat {{ $provider['name'] }}</h1>
-                        <p class="cert-page-description">
+                        <p class="cert-page-label" data-lang-in="Galeri Sertifikasi" data-lang-en="Certification Gallery">Certification Gallery</p>
+                        <h1 data-lang-in="Sertifikat {{ $provider['name'] }}" data-lang-en="{{ $provider['name'] }} Certificates">Sertifikat {{ $provider['name'] }}</h1>
+                        <p class="cert-page-description" data-lang-in="Halaman ini menampilkan sertifikat {{ $provider['name'] }} dalam format preview. Pilih dokumen dari daftar, lalu tinjau PDF-nya langsung di halaman ini." data-lang-en="This page displays {{ $provider['name'] }} certificates in preview format. Select a document from the list, then review its PDF directly on this page.">
                             Halaman ini menampilkan sertifikat {{ $provider['name'] }} dalam format preview. Pilih dokumen dari daftar, lalu tinjau PDF-nya langsung di halaman ini.
                         </p>
                     </div>
-                    <a href="{{ route('home') }}#certifications" class="cert-page-back">Kembali ke Sertifikasi</a>
+                    <a href="{{ route('home') }}#certifications" class="cert-page-back" data-lang-in="Kembali ke Sertifikasi" data-lang-en="Back to Certifications">Kembali ke Sertifikasi</a>
                 </div>
 
                 <div class="container cert-detail animate visible">
                     <div class="cert-detail-shell">
                         <div class="cert-detail-list">
-                            <p class="cert-detail-label">Daftar Sertifikat</p>
+                            <p class="cert-detail-label" data-lang-in="Daftar Sertifikat" data-lang-en="Certificate List">Daftar Sertifikat</p>
                             @foreach ($provider['certificates'] as $index => $certificate)
                                 <button
                                     type="button"

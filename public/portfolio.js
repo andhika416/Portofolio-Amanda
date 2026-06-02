@@ -1,4 +1,127 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const htmlElement = document.documentElement;
+  const languageToggleButtons = Array.from(
+    document.querySelectorAll('[data-lang-toggle]')
+  );
+  const translatableElements = Array.from(
+    document.querySelectorAll('[data-lang-in][data-lang-en]')
+  );
+  const attributeTranslatableElements = Array.from(
+    document.querySelectorAll('[data-aria-label-in][data-aria-label-en]')
+  );
+  const languageStorageKey = 'portfolio-language';
+  const themeStorageKey = 'portfolio-theme';
+  const themeSwitch = document.querySelector('.theme-switch');
+  const themeSwitchTrigger = document.querySelector('.theme-switch-trigger');
+  const themeSwitchMenu = document.querySelector('.theme-switch-menu');
+  const themeOptionButtons = Array.from(
+    document.querySelectorAll('[data-theme-value]')
+  );
+
+  const applyLanguage = (language) => {
+    const normalizedLanguage = language === 'en' ? 'en' : 'in';
+    htmlElement.lang = normalizedLanguage === 'en' ? 'en' : 'id';
+
+    translatableElements.forEach((element) => {
+      const nextText =
+        normalizedLanguage === 'en'
+          ? element.getAttribute('data-lang-en')
+          : element.getAttribute('data-lang-in');
+      if (typeof nextText === 'string') {
+        element.textContent = nextText;
+      }
+    });
+
+    attributeTranslatableElements.forEach((element) => {
+      const nextAria =
+        normalizedLanguage === 'en'
+          ? element.getAttribute('data-aria-label-en')
+          : element.getAttribute('data-aria-label-in');
+      if (typeof nextAria === 'string') {
+        element.setAttribute('aria-label', nextAria);
+      }
+    });
+
+    const nextTitle =
+      normalizedLanguage === 'en'
+        ? htmlElement.getAttribute('data-page-title-en')
+        : htmlElement.getAttribute('data-page-title-in');
+    if (nextTitle) {
+      document.title = nextTitle;
+    }
+
+    languageToggleButtons.forEach((button) => {
+      const isActive = button.getAttribute('data-lang-toggle') === normalizedLanguage;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
+    window.localStorage.setItem(languageStorageKey, normalizedLanguage);
+  };
+
+  const initialLanguage = window.localStorage.getItem(languageStorageKey) || 'in';
+  applyLanguage(initialLanguage);
+
+  languageToggleButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const nextLanguage = button.getAttribute('data-lang-toggle') || 'in';
+      applyLanguage(nextLanguage);
+    });
+  });
+
+  const applyTheme = (theme) => {
+    const normalizedTheme = theme === 'dark' ? 'dark' : 'light';
+    htmlElement.setAttribute('data-theme', normalizedTheme);
+
+    themeOptionButtons.forEach((button) => {
+      const isActive = button.getAttribute('data-theme-value') === normalizedTheme;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
+    window.localStorage.setItem(themeStorageKey, normalizedTheme);
+  };
+
+  const closeThemeMenu = () => {
+    if (!themeSwitchTrigger || !themeSwitchMenu) return;
+    themeSwitchTrigger.setAttribute('aria-expanded', 'false');
+    themeSwitchMenu.hidden = true;
+  };
+
+  const openThemeMenu = () => {
+    if (!themeSwitchTrigger || !themeSwitchMenu) return;
+    themeSwitchTrigger.setAttribute('aria-expanded', 'true');
+    themeSwitchMenu.hidden = false;
+  };
+
+  const initialTheme = window.localStorage.getItem(themeStorageKey) || 'light';
+  applyTheme(initialTheme);
+
+  themeSwitchTrigger?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isExpanded =
+      themeSwitchTrigger.getAttribute('aria-expanded') === 'true';
+    if (isExpanded) {
+      closeThemeMenu();
+    } else {
+      openThemeMenu();
+    }
+  });
+
+  themeOptionButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const nextTheme = button.getAttribute('data-theme-value') || 'light';
+      applyTheme(nextTheme);
+      closeThemeMenu();
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!themeSwitch?.contains(event.target)) {
+      closeThemeMenu();
+    }
+  });
+
   const animatedElements = document.querySelectorAll('.animate');
   const siteHeader = document.querySelector('.site-header');
   const navLinks = document.querySelectorAll('.site-nav a');
