@@ -9,6 +9,11 @@ $certificationCatalog = [
         'logo' => 'Kemnaker.png',
         'certificates' => [
             [
+                'title' => 'MagangHub',
+                'subtitle' => 'Program Magang Bersertifikat',
+                'file' => 'MagangHub.pdf',
+            ],
+            [
                 'title' => 'Petugas Penguji Lingkungan Kerja',
                 'subtitle' => 'Balai K3 Surabaya',
                 'file' => 'PCU - Amanda Sasmi Hanifa (1).pdf',
