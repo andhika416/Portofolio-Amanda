@@ -23,9 +23,9 @@
                     <div class="hero-copy animate">
                         <h1>Amanda Sasmi Hanifa</h1>
                         <p
-                            data-lang-in="Hai! Aku Amanda Sasmi Hanifa, lulusan S1 Biologi yang tertarik di bidang laboratorium, K3 dan kesehatan lingkungan. Suka belajar hal baru, detail-oriented, dan senang berkembang lewat pengalaman baru. Percaya bahwa science dan safety bisa jadi hal kecil yang memberi impact besar."
-                            data-lang-en="Hi! I'm Amanda Sasmi Hanifa, a Biology graduate with a strong interest in laboratory work, occupational health and safety, and environmental health. I enjoy learning new things, I'm detail-oriented, and I love growing through new experiences. I believe science and safety can become small actions that create a big impact."
-                        >Hai! Aku Amanda Sasmi Hanifa, lulusan S1 Biologi yang tertarik di bidang laboratorium, K3 dan kesehatan lingkungan. Suka belajar hal baru, detail-oriented, dan senang berkembang lewat pengalaman baru. Percaya bahwa science dan safety bisa jadi hal kecil yang memberi impact besar.</p>
+                            data-lang-in="Hai! Aku Amanda Sasmi Hanifa, lulusan S1 Biologi yang tertarik di bidang Keselamatan dan Kesehatan Kerja (K3), kesehatan lingkungan dan laboratorium. Detail-oriented dan senang berkembang lewat pengalaman baru. Percaya bahwa science dan safety bisa jadi hal berimpact besar."
+                            data-lang-en="Hi! I'm Amanda Sasmi Hanifa, a Biology graduate with a strong interest in occupational health and safety, environmental health, and laboratory work. I'm detail-oriented and enjoy growing through new experiences. I believe science and safety can create meaningful impact."
+                        >Hai! Aku Amanda Sasmi Hanifa, lulusan S1 Biologi yang tertarik di bidang Keselamatan dan Kesehatan Kerja (K3), kesehatan lingkungan dan laboratorium. Detail-oriented dan senang berkembang lewat pengalaman baru. Percaya bahwa science dan safety bisa jadi hal berimpact besar.</p>
                         <a href="https://wa.me/62859155186165" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp" data-aria-label-in="Hubungi saya melalui WhatsApp" data-aria-label-en="Contact me via WhatsApp">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M19.05 4.94A9.94 9.94 0 0 0 12.02 2c-5.5 0-9.97 4.47-9.97 9.98 0 1.76.46 3.47 1.33 4.98L2 22l5.2-1.36a9.95 9.95 0 0 0 4.81 1.23h.01c5.5 0 9.98-4.48 9.98-9.98 0-2.66-1.04-5.16-2.95-7.01Zm-7.03 15.24h-.01a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.09.81.83-3.01-.2-.31a8.28 8.28 0 0 1-1.28-4.38c0-4.58 3.73-8.31 8.31-8.31 2.21 0 4.29.86 5.85 2.43a8.24 8.24 0 0 1 2.44 5.88c0 4.58-3.73 8.31-8.32 8.31Zm4.56-6.22c-.25-.12-1.48-.73-1.71-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.45-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.02 2.6.12.17 1.76 2.69 4.26 3.77.59.26 1.06.42 1.42.54.6.19 1.15.16 1.59.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29Z"/>
@@ -53,9 +53,9 @@
                 </div>
                 <div class="container about-grid animate">
                     <article class="about-copy">
-                        <p data-lang-in="Halo! Saya Amanda Sasmi Hanifa, lulusan S1 Biologi yang memiliki ketertarikan pada bidang laboratorium, Keselamatan dan Kesehatan Kerja (K3) dan kesehatan lingkungan." data-lang-en="Hello! I am Amanda Sasmi Hanifa, a Biology graduate with a strong interest in laboratory work, Occupational Health and Safety (OHS), and environmental health.">Halo! Saya Amanda Sasmi Hanifa, lulusan S1 Biologi yang memiliki ketertarikan pada bidang laboratorium, Keselamatan dan Kesehatan Kerja (K3) dan kesehatan lingkungan.</p>
-                        <p data-lang-in="Selama masa perkuliahan, saya aktif dalam kegiatan praktikum, penelitian, dan aktivitas akademik yang membantu mengembangkan kemampuan analisis, komunikasi, serta problem solving. Saya juga pernah menjadi asisten dosen mata kuliah Keanekaragaman Hewan, sehingga terbiasa bekerja dalam tim, membimbing mahasiswa, dan mendukung pelaksanaan kegiatan praktikum secara terstruktur." data-lang-en="During my university years, I was actively involved in laboratory practice, research, and academic activities that helped me strengthen my analytical, communication, and problem-solving skills. I also worked as a teaching assistant for the Animal Diversity course, which made me comfortable working in teams, mentoring students, and supporting structured laboratory activities.">Selama masa perkuliahan, saya aktif dalam kegiatan praktikum, penelitian, dan aktivitas akademik yang membantu mengembangkan kemampuan analisis, komunikasi, serta problem solving. Saya juga pernah menjadi asisten dosen mata kuliah Keanekaragaman Hewan, sehingga terbiasa bekerja dalam tim, membimbing mahasiswa, dan mendukung pelaksanaan kegiatan praktikum secara terstruktur.</p>
-                        <p data-lang-in="Saat ini, saya terus mengembangkan pengetahuan dan keterampilan di bidang K3, pengujian lingkungan kerja, serta administrasi laboratorium dan profesional. Saya memiliki ketertarikan untuk berkontribusi dalam menciptakan lingkungan kerja yang aman, sehat, dan produktif melalui pendekatan ilmiah, ketelitian, dan kemampuan adaptasi yang baik." data-lang-en="At present, I continue to develop my knowledge and skills in occupational health and safety, workplace environmental testing, and laboratory and professional administration. I am highly motivated to contribute to creating safe, healthy, and productive workplaces through scientific thinking, accuracy, and strong adaptability.">Saat ini, saya terus mengembangkan pengetahuan dan keterampilan di bidang K3, pengujian lingkungan kerja, serta administrasi laboratorium dan profesional. Saya memiliki ketertarikan untuk berkontribusi dalam menciptakan lingkungan kerja yang aman, sehat, dan produktif melalui pendekatan ilmiah, ketelitian, dan kemampuan adaptasi yang baik.</p>
+                        <p data-lang-in="Halo! Saya Amanda Sasmi Hanifa, lulusan S1 Biologi yang memiliki ketertarikan pada Keselamatan dan Kesehatan Kerja (K3), terutama dalam penerapan sistem keselamatan, identifikasi bahaya, dan pengendalian risiko di lingkungan kerja maupun laboratorium." data-lang-en="Hello! I am Amanda Sasmi Hanifa, a Biology graduate with a strong interest in Occupational Health and Safety (OHS), especially in the implementation of safety systems, hazard identification, and risk control in workplace and laboratory environments.">Halo! Saya Amanda Sasmi Hanifa, lulusan S1 Biologi yang memiliki ketertarikan pada Keselamatan dan Kesehatan Kerja (K3), terutama dalam penerapan sistem keselamatan, identifikasi bahaya, dan pengendalian risiko di lingkungan kerja maupun laboratorium.</p>
+                        <p data-lang-in="Selama perkuliahan, saya aktif dalam kegiatan praktikum, penelitian, serta aktivitas akademik yang membentuk kemampuan analisis, ketelitian, komunikasi, dan problem solving. Saya juga memiliki pengalaman sebagai asisten dosen mata kuliah Keanekaragaman Hewan, yang melatih saya untuk bekerja secara terstruktur, mendampingi kegiatan praktikum, serta memastikan prosedur berjalan sesuai standar." data-lang-en="During university, I was actively involved in laboratory practice, research, and academic activities that shaped my analytical skills, accuracy, communication, and problem-solving abilities. I also gained experience as a teaching assistant for the Animal Diversity course, which trained me to work in a structured manner, support practical sessions, and ensure procedures were carried out according to standards.">Selama perkuliahan, saya aktif dalam kegiatan praktikum, penelitian, serta aktivitas akademik yang membentuk kemampuan analisis, ketelitian, komunikasi, dan problem solving. Saya juga memiliki pengalaman sebagai asisten dosen mata kuliah Keanekaragaman Hewan, yang melatih saya untuk bekerja secara terstruktur, mendampingi kegiatan praktikum, serta memastikan prosedur berjalan sesuai standar.</p>
+                        <p data-lang-in="Saat ini, saya terus mengembangkan kompetensi di bidang K3, termasuk pemahaman terhadap standar keselamatan kerja, pengelolaan risiko, serta pengawasan lingkungan kerja. Saya memiliki motivasi kuat untuk berkontribusi dalam menciptakan lingkungan kerja yang aman, sehat, dan produktif melalui pendekatan ilmiah, disiplin, dan tanggung jawab profesional." data-lang-en="At present, I continue to develop my competence in OHS, including an understanding of occupational safety standards, risk management, and workplace environmental monitoring. I am strongly motivated to contribute to creating safe, healthy, and productive workplaces through scientific thinking, discipline, and professional responsibility.">Saat ini, saya terus mengembangkan kompetensi di bidang K3, termasuk pemahaman terhadap standar keselamatan kerja, pengelolaan risiko, serta pengawasan lingkungan kerja. Saya memiliki motivasi kuat untuk berkontribusi dalam menciptakan lingkungan kerja yang aman, sehat, dan produktif melalui pendekatan ilmiah, disiplin, dan tanggung jawab profesional.</p>
                     </article>
                     <div class="about-visual">
                         <div class="about-portrait-accent" aria-hidden="true"></div>
@@ -83,9 +83,9 @@
                         </div>
                         <p
                             class="education-copy"
-                            data-lang-in="Saya menyelesaikan pendidikan Sarjana Biologi dengan fokus pembelajaran pada praktikum, riset ilmiah, analisis laboratorium, serta pengembangan kemampuan berpikir kritis dan pemecahan masalah."
-                            data-lang-en="I completed my Bachelor's degree in Biology with a strong learning focus on laboratory practice, scientific research, laboratory analysis, and the development of critical thinking and problem-solving skills."
-                        >Saya menyelesaikan pendidikan Sarjana Biologi dengan fokus pembelajaran pada praktikum, riset ilmiah, analisis laboratorium, serta pengembangan kemampuan berpikir kritis dan pemecahan masalah.</p>
+                            data-lang-in="Saya menyelesaikan pendidikan Sarjana Biologi dengan pengalaman riset ilmiah, analisis laboratorium dan penerapan K3 pada setiap kegiatan."
+                            data-lang-en="I completed my Bachelor's degree in Biology with experience in scientific research, laboratory analysis, and the implementation of occupational health and safety practices in every activity."
+                        >Saya menyelesaikan pendidikan Sarjana Biologi dengan pengalaman riset ilmiah, analisis laboratorium dan penerapan K3 pada setiap kegiatan.</p>
                         <div class="education-facts">
                             <div class="education-fact">
                                 <span data-lang-in="Jenjang" data-lang-en="Degree">Jenjang</span>
@@ -96,8 +96,8 @@
                                 <strong data-lang-in="Biologi" data-lang-en="Biology">Biologi</strong>
                             </div>
                             <div class="education-fact">
-                                <span data-lang-in="Fokus" data-lang-en="Focus">Fokus</span>
-                                <strong data-lang-in="Laboratorium dan Riset" data-lang-en="Laboratory and Research">Laboratorium dan Riset</strong>
+                                <span data-lang-in="IPK" data-lang-en="GPA">IPK</span>
+                                <strong data-lang-in="3.79/4.00" data-lang-en="3.79/4.00">3.79/4.00</strong>
                             </div>
                         </div>
                     </article>
@@ -126,42 +126,39 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Magang • 2025-2026" data-lang-en="Internship • 2025-2026">Magang • 2025-2026</span>
+                                <span class="timeline-meta" data-lang-in="Magang (2025-2026)" data-lang-en="Internship (2025-2026)">Magang (2025-2026)</span>
                                 <h3>Balai Keselamatan dan Kesehatan Kerja Surabaya</h3>
+                                <p class="timeline-role" data-lang-in="Penguji Lingkungan Kerja" data-lang-en="Work Environment Tester">Penguji Lingkungan Kerja</p>
                                 <ul class="timeline-list">
-                                    <li data-lang-in="Melaksanakan pengujian faktor bahaya di lingkungan kerja dan ambien dengan parameter fisika dan kimia sesuai Permenaker No. 5 Tahun 2018 dan SNI yang berlaku." data-lang-en="Performed workplace and ambient hazard testing using physical and chemical parameters in accordance with Minister of Manpower Regulation No. 5 of 2018 and applicable Indonesian National Standards.">Melaksanakan pengujian faktor bahaya di lingkungan kerja dan ambien dengan parameter fisika dan kimia sesuai Permenaker No. 5 Tahun 2018 dan SNI yang berlaku.</li>
-                                    <li data-lang-in="Menyusun lebih dari 15 Laporan Hasil Uji (LHU) dengan interpretasi kesesuaian terhadap NAB dan baku mutu lingkungan kerja." data-lang-en="Prepared more than 15 test reports with compliance interpretation against threshold limit values and workplace environmental quality standards.">Menyusun lebih dari 15 Laporan Hasil Uji (LHU) dengan interpretasi kesesuaian terhadap NAB dan baku mutu lingkungan kerja.</li>
+                                    <li data-lang-in="Menerapkan peraturan perundang-undangan dalam pengujian keselamatan dan kesehatan kerja." data-lang-en="Applied laws and regulations in occupational health and safety testing.">Menerapkan peraturan perundang-undangan dalam pengujian keselamatan dan kesehatan kerja.</li>
+                                    <li data-lang-in="Melakukan identifikasi potensi bahaya lingkungan kerja." data-lang-en="Identified potential hazards in the work environment.">Melakukan identifikasi potensi bahaya lingkungan kerja.</li>
+                                    <li data-lang-in="Melakukan pengukuran faktor fisika lingkungan kerja." data-lang-en="Conducted measurements of physical factors in the work environment.">Melakukan pengukuran faktor fisika lingkungan kerja.</li>
+                                    <li data-lang-in="Melakukan pengujian faktor kimia lingkungan kerja." data-lang-en="Conducted testing of chemical factors in the work environment.">Melakukan pengujian faktor kimia lingkungan kerja.</li>
+                                    <li data-lang-in="Mengelola data, interpretasi hasil, dan penyusunan laporan hasil pengujian K3." data-lang-en="Managed data, interpreted results, and prepared occupational health and safety testing reports.">Mengelola data, interpretasi hasil, dan penyusunan laporan hasil pengujian K3.</li>
+                                    <li data-lang-in="Penerapan prinsip higiene inhigien." data-lang-en="Applied industrial hygiene principles.">Penerapan prinsip higiene inhigien.</li>
+                                    <li data-lang-in="Mengelola fasilitas dan tindakan tanggap darurat." data-lang-en="Managed facilities and emergency response actions.">Mengelola fasilitas dan tindakan tanggap darurat.</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Proyek Penelitian Skripsi • 2024-2025" data-lang-en="Final Research Project • 2024-2025">Proyek Penelitian Skripsi • 2024-2025</span>
-                                <h3 data-lang-in="Penelitian Single Aged Garlic" data-lang-en="Single Aged Garlic Research">Penelitian Single Aged Garlic</h3>
+                                <span class="timeline-meta" data-lang-in="Asisten Dosen (2025)" data-lang-en="Teaching Assistant (2025)">Asisten Dosen (2025)</span>
+                                <h3>Universitas Negeri Malang</h3>
                                 <ul class="timeline-list">
-                                    <li data-lang-in="Melakukan penelitian evaluasi efektivitas Single Aged Garlic dalam memengaruhi kadar kolesterol dan trigliserida pada hewan mencit yang diberi pakan tinggi kalori." data-lang-en="Conducted research to evaluate the effectiveness of Single Aged Garlic in affecting cholesterol and triglyceride levels in mice fed a high-calorie diet.">Melakukan penelitian evaluasi efektivitas Single Aged Garlic dalam memengaruhi kadar kolesterol dan trigliserida pada hewan mencit yang diberi pakan tinggi kalori.</li>
+                                    <li data-lang-in="Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan dan kesehatan kerja di laboratorium." data-lang-en="Assisted lecturers by guiding and leading laboratory practice sessions for around 120 students, including occupational health and safety supervision in the laboratory.">Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan dan kesehatan kerja di laboratorium.</li>
+                                    <li data-lang-in="Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa." data-lang-en="Prepared teaching materials, presented complex scientific concepts, and evaluated student understanding.">Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa.</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Proyek Riset • 2024" data-lang-en="Research Project • 2024">Proyek Riset • 2024</span>
-                                <h3 data-lang-in="Proyek Riset Kesehatan Lingkungan" data-lang-en="Environmental Health Research Project">Proyek Riset Kesehatan Lingkungan</h3>
+                                <span class="timeline-meta" data-lang-in="Riset (2024)" data-lang-en="Research (2024)">Riset (2024)</span>
+                                <h3 data-lang-in="Kesehatan Lingkungan" data-lang-en="Environmental Health">Kesehatan Lingkungan</h3>
                                 <ul class="timeline-list">
                                     <li data-lang-in="Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu." data-lang-en="Surveyed pesticide and PPE usage behavior in pest control as well as health complaints among vegetable farmers in Junrejo Village, Batu City.">Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu.</li>
                                     <li data-lang-in="Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor." data-lang-en="Analyzed residents' health issues in Heritage Village, Malang City, related to indoor air quality.">Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Proyek Riset Teknik Analisis Biologi Molekuler • 2023" data-lang-en="Molecular Biology Analysis Technique Research • 2023">Proyek Riset Teknik Analisis Biologi Molekuler • 2023</span>
-                                <h3 data-lang-in="Riset Biologi Molekuler" data-lang-en="Molecular Biology Research">Riset Biologi Molekuler</h3>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Isolasi dan identifikasi RNA pada sel hewan." data-lang-en="Performed RNA isolation and identification in animal cells.">Isolasi dan identifikasi RNA pada sel hewan.</li>
                                 </ul>
                             </div>
                         </div>
@@ -170,35 +167,26 @@
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Asisten Dosen • 2025" data-lang-en="Teaching Assistant • 2025">Asisten Dosen • 2025</span>
-                                <h3>Universitas Negeri Malang</h3>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan kerja di laboratorium." data-lang-en="Assisted lecturers by guiding and leading laboratory practice sessions for around 120 students, including laboratory safety supervision.">Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan kerja di laboratorium.</li>
-                                    <li data-lang-in="Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa." data-lang-en="Prepared teaching materials, presented complex scientific concepts, and evaluated student understanding.">Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
                                 <span class="timeline-meta" data-lang-in="Magang • 2024" data-lang-en="Internship • 2024">Magang • 2024</span>
                                 <h3>Dinas Lingkungan Hidup Kab. Nganjuk</h3>
                                 <ul class="timeline-list">
-                                    <li data-lang-in="Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, dan analisis data dengan parameter fisika, kimia, dan biologi." data-lang-en="Worked in an environmental laboratory focused on sample preparation, sampling, and data analysis using physical, chemical, and biological parameters.">Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, dan analisis data dengan parameter fisika, kimia, dan biologi.</li>
-                                    <li data-lang-in="Proyek riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk." data-lang-en="Research project: Analysis of textile industry liquid waste quality in micro, small, and medium enterprises at the Nganjuk Regency Environmental Laboratory UPTD.">Proyek riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk.</li>
+                                    <li data-lang-in="Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, serta analisis parameter fisika, kimia, dan biologi sesuai standar pengujian lingkungan." data-lang-en="Worked in an environmental laboratory focusing on sample preparation, sampling, and the analysis of physical, chemical, and biological parameters in accordance with environmental testing standards.">Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, serta analisis parameter fisika, kimia, dan biologi sesuai standar pengujian lingkungan.</li>
+                                    <li data-lang-in="Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) di laboratorium, termasuk penggunaan APD, penanganan bahan kimia, dan prosedur kerja aman untuk meminimalkan risiko paparan." data-lang-en="Applied occupational health and safety principles in the laboratory, including the use of PPE, chemical handling, and safe work procedures to minimize exposure risks.">Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) di laboratorium, termasuk penggunaan APD, penanganan bahan kimia, dan prosedur kerja aman untuk meminimalkan risiko paparan.</li>
+                                    <li data-lang-in="Melakukan pengolahan dan analisis data hasil pengujian lingkungan secara akurat dan sistematis." data-lang-en="Processed and analyzed environmental testing data accurately and systematically.">Melakukan pengolahan dan analisis data hasil pengujian lingkungan secara akurat dan sistematis.</li>
+                                    <li data-lang-in="Riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk." data-lang-en="Research: Analysis of textile industry liquid waste quality in micro, small, and medium enterprises at the Nganjuk Regency Environmental Laboratory UPTD.">Riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk.</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Proyek Riset Mikrobiologi • 2024" data-lang-en="Microbiology Research Project • 2024">Proyek Riset Mikrobiologi • 2024</span>
+                                <span class="timeline-meta" data-lang-in="Proyek Riset Mikrobiologi • 2024 (dengan penerapan K3)" data-lang-en="Microbiology Research Project • 2024 (with OHS implementation)">Proyek Riset Mikrobiologi • 2024 (dengan penerapan K3)</span>
                                 <h3 data-lang-in="Riset Mikrobiologi" data-lang-en="Microbiology Research">Riset Mikrobiologi</h3>
                                 <ul class="timeline-list">
-                                    <li data-lang-in="Pembuatan yoghurt dengan sari wortel sebagai bahan dasar." data-lang-en="Produced yogurt using carrot extract as the base ingredient.">Pembuatan yoghurt dengan sari wortel sebagai bahan dasar.</li>
-                                    <li data-lang-in="Uji kualitas mikrobiologi makanan dalam kaleng berdasarkan angka lempeng total koloni bakteri." data-lang-en="Tested the microbiological quality of canned food based on total plate count of bacterial colonies.">Uji kualitas mikrobiologi makanan dalam kaleng berdasarkan angka lempeng total koloni bakteri.</li>
-                                    <li data-lang-in="Pewarnaan gram dan pengukuran sel bakteri." data-lang-en="Performed Gram staining and bacterial cell measurement.">Pewarnaan gram dan pengukuran sel bakteri.</li>
-                                    <li data-lang-in="Uji kualitas mikrobiologi air kemasan berdasarkan nilai MPN Coliform." data-lang-en="Tested the microbiological quality of packaged water based on Coliform MPN values.">Uji kualitas mikrobiologi air kemasan berdasarkan nilai MPN Coliform.</li>
+                                    <li data-lang-in="Penelitian pembuatan yoghurt dengan penambahan sari wortel sebagai bahan dasar, dengan penerapan K3 di laboratorium mikrobiologi, termasuk penggunaan APD dan prosedur kerja aseptik selama proses fermentasi dan analisis." data-lang-en="Conducted research on yogurt production with carrot extract as the base ingredient, applying OHS practices in the microbiology laboratory, including the use of PPE and aseptic procedures during fermentation and analysis.">Penelitian pembuatan yoghurt dengan penambahan sari wortel sebagai bahan dasar, dengan penerapan K3 di laboratorium mikrobiologi, termasuk penggunaan APD dan prosedur kerja aseptik selama proses fermentasi dan analisis.</li>
+                                    <li data-lang-in="Uji kualitas mikrobiologi makanan dalam kemasan kaleng berdasarkan Angka Lempeng Total (ALT) koloni bakteri dengan memperhatikan aspek K3, seperti penanganan sampel biologis secara aman dan pengelolaan risiko kontaminasi." data-lang-en="Tested the microbiological quality of canned food based on Total Plate Count (TPC) of bacterial colonies while observing OHS aspects, such as safe biological sample handling and contamination risk management.">Uji kualitas mikrobiologi makanan dalam kemasan kaleng berdasarkan Angka Lempeng Total (ALT) koloni bakteri dengan memperhatikan aspek K3, seperti penanganan sampel biologis secara aman dan pengelolaan risiko kontaminasi.</li>
+                                    <li data-lang-in="Pewarnaan Gram serta pengukuran sel bakteri dengan penerapan standar K3 laboratorium, termasuk penggunaan bahan kimia secara aman dan pembuangan limbah sesuai prosedur." data-lang-en="Performed Gram staining and bacterial cell measurement while applying laboratory OHS standards, including safe chemical use and proper waste disposal procedures.">Pewarnaan Gram serta pengukuran sel bakteri dengan penerapan standar K3 laboratorium, termasuk penggunaan bahan kimia secara aman dan pembuangan limbah sesuai prosedur.</li>
+                                    <li data-lang-in="Uji kualitas mikrobiologi air minum dalam kemasan menggunakan metode Most Probable Number (MPN) Coliform dengan memperhatikan prinsip K3 untuk mencegah paparan mikroorganisme dan menjaga keamanan kerja di laboratorium." data-lang-en="Tested the microbiological quality of packaged drinking water using the Most Probable Number (MPN) Coliform method while observing OHS principles to prevent microorganism exposure and maintain laboratory safety.">Uji kualitas mikrobiologi air minum dalam kemasan menggunakan metode Most Probable Number (MPN) Coliform dengan memperhatikan prinsip K3 untuk mencegah paparan mikroorganisme dan menjaga keamanan kerja di laboratorium.</li>
                                 </ul>
                             </div>
                         </div>
@@ -215,17 +203,20 @@
                     <div class="skill-group">
                         <h3 data-lang-in="Keselamatan dan Kesehatan Kerja" data-lang-en="Occupational Health and Safety">Keselamatan dan Kesehatan Kerja</h3>
                         <ul>
-                            <li data-lang-in="Identifikasi Bahaya dan Risiko Kerja" data-lang-en="Workplace Hazard and Risk Identification">Identifikasi Bahaya dan Risiko Kerja</li>
+                            <li data-lang-in="Identifikasi bahaya dan penilaian risiko kerja" data-lang-en="Hazard identification and workplace risk assessment">Identifikasi bahaya dan penilaian risiko kerja</li>
                             <li data-lang-in="Pengujian Faktor Bahaya Lingkungan Kerja" data-lang-en="Workplace Environmental Hazard Testing">Pengujian Faktor Bahaya Lingkungan Kerja</li>
+                            <li data-lang-in="Penerapan prinsip higiene industri" data-lang-en="Application of industrial hygiene principles">Penerapan prinsip higiene industri</li>
+                            <li data-lang-in="Pengelolaan fasilitas dan tindakan tanggap darurat" data-lang-en="Facility management and emergency response actions">Pengelolaan fasilitas dan tindakan tanggap darurat</li>
+                            <li data-lang-in="P3K" data-lang-en="First Aid">P3K</li>
                         </ul>
                     </div>
                     <div class="skill-group">
                         <h3 data-lang-in="Laboratorium" data-lang-en="Laboratory">Laboratorium</h3>
                         <ul>
-                            <li data-lang-in="Quality Control Laboratorium" data-lang-en="Laboratory Quality Control">Quality Control Laboratorium</li>
-                            <li data-lang-in="Analisis Mikrobiologi" data-lang-en="Microbiological Analysis">Analisis Mikrobiologi</li>
-                            <li data-lang-in="Isolasi RNA" data-lang-en="RNA Isolation">Isolasi RNA</li>
-                            <li data-lang-in="Elektroforesis" data-lang-en="Electrophoresis">Elektroforesis</li>
+                            <li data-lang-in="Quality control" data-lang-en="Quality control">Quality control</li>
+                            <li data-lang-in="Preparasi sampel" data-lang-en="Sample preparation">Preparasi sampel</li>
+                            <li data-lang-in="Analisis mikrobiologi" data-lang-en="Microbiological analysis">Analisis mikrobiologi</li>
+                            <li data-lang-in="Analisis kimia" data-lang-en="Chemical analysis">Analisis kimia</li>
                         </ul>
                     </div>
                 </div>
@@ -255,7 +246,7 @@
                     <h2 data-lang-in="Sertifikasi" data-lang-en="Certifications">Sertifikasi</h2>
                 </div>
                 <div class="container cert-cards animate">
-                    <div class="cert-card">
+                    <div class="cert-card" data-cert-url="{{ route('certifications.show', 'kemnaker') }}" role="link" tabindex="0">
                         <div class="cert-brand">
                             <div class="cert-logo-frame">
                                 <img src="{{ $imagePath($certificationCatalog['kemnaker']['logo']) }}" alt="Logo Kemnaker" class="cert-logo-image" />
@@ -272,7 +263,7 @@
                             <a href="{{ route('certifications.show', 'kemnaker') }}" data-lang-in="Lihat Sertifikat" data-lang-en="View Certificates">Lihat Sertifikat</a>
                         </div>
                     </div>
-                    <div class="cert-card">
+                    <div class="cert-card" data-cert-url="{{ route('certifications.show', 'bnsp') }}" role="link" tabindex="0">
                         <div class="cert-brand">
                             <div class="cert-logo-frame">
                                 <img src="{{ $imagePath($certificationCatalog['bnsp']['logo']) }}" alt="Logo BNSP" class="cert-logo-image" />
@@ -289,7 +280,7 @@
                             <a href="{{ route('certifications.show', 'bnsp') }}" data-lang-in="Lihat Sertifikat" data-lang-en="View Certificates">Lihat Sertifikat</a>
                         </div>
                     </div>
-                    <div class="cert-card">
+                    <div class="cert-card" data-cert-url="{{ route('certifications.show', 'gnik') }}" role="link" tabindex="0">
                         <div class="cert-brand">
                             <div class="cert-logo-frame">
                                 <img src="{{ $imagePath($certificationCatalog['gnik']['logo']) }}" alt="Logo GNIK" class="cert-logo-image" />
@@ -306,7 +297,7 @@
                             <a href="{{ route('certifications.show', 'gnik') }}" data-lang-in="Lihat Sertifikat" data-lang-en="View Certificates">Lihat Sertifikat</a>
                         </div>
                     </div>
-                    <div class="cert-card">
+                    <div class="cert-card" data-cert-url="{{ route('certifications.show', 'makin-ahli') }}" role="link" tabindex="0">
                         <div class="cert-brand">
                             <div class="cert-logo-frame">
                                 <img src="{{ $imagePath($certificationCatalog['makin-ahli']['logo']) }}" alt="Logo Makin Ahli" class="cert-logo-image" />
@@ -323,7 +314,24 @@
                             <a href="{{ route('certifications.show', 'makin-ahli') }}" data-lang-in="Lihat Sertifikat" data-lang-en="View Certificates">Lihat Sertifikat</a>
                         </div>
                     </div>
-                    <div class="cert-card">
+                    <div class="cert-card" data-cert-url="{{ route('certifications.show', 'kiamori') }}" role="link" tabindex="0">
+                        <div class="cert-brand">
+                            <div class="cert-logo-frame">
+                                <img src="{{ $imagePath($certificationCatalog['kiamori']['logo']) }}" alt="Logo Kiamori Academy" class="cert-logo-image" />
+                            </div>
+                            <div class="cert-copy">
+                                <h3>{{ $certificationCatalog['kiamori']['name'] }}</h3>
+                                <span>{{ $certificationCatalog['kiamori']['organization'] }}</span>
+                            </div>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-pill">
+                                <span data-lang-in="{{ count($certificationCatalog['kiamori']['certificates']) }} Sertifikat" data-lang-en="{{ count($certificationCatalog['kiamori']['certificates']) }} Certificates">{{ count($certificationCatalog['kiamori']['certificates']) }} Sertifikat</span>
+                            </div>
+                            <a href="{{ route('certifications.show', 'kiamori') }}" data-lang-in="Lihat Sertifikat" data-lang-en="View Certificates">Lihat Sertifikat</a>
+                        </div>
+                    </div>
+                    <div class="cert-card" data-cert-url="{{ route('certifications.show', 'microsoft') }}" role="link" tabindex="0">
                         <div class="cert-brand">
                             <div class="cert-logo-frame">
                                 <img src="{{ $imagePath($certificationCatalog['microsoft']['logo']) }}" alt="Logo Microsoft" class="cert-logo-image" />

@@ -457,4 +457,30 @@ document.addEventListener('DOMContentLoaded', function () {
       renderCertificatePreview(panel, initialPreviewSrc);
     }
   });
+
+  document.querySelectorAll('.cert-card[data-cert-url]').forEach((card) => {
+    const destination = card.getAttribute('data-cert-url');
+    if (!destination) return;
+
+    const openCardTarget = () => {
+      window.location.href = destination;
+    };
+
+    card.addEventListener('click', (event) => {
+      if (event.target.closest('a, button')) {
+        return;
+      }
+
+      openCardTarget();
+    });
+
+    card.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') {
+        return;
+      }
+
+      event.preventDefault();
+      openCardTarget();
+    });
+  });
 });

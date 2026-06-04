@@ -91,6 +91,23 @@ $certificationCatalog = [
             ],
         ],
     ],
+    'kiamori' => [
+        'name' => 'Kiamori Academy',
+        'organization' => 'Perusahaan Jasa Keselamatan dan Kesehatan Kerja',
+        'logo' => 'Kiamori.png',
+        'certificates' => [
+            [
+                'title' => 'Surat Keterangan Pelatihan AK3U',
+                'subtitle' => 'Kiamori Academy',
+                'file' => 'Surat Keterangan Pelatihan AK3U.pdf',
+            ],
+            [
+                'title' => 'SERTIFIKAT PROVIDER P3K',
+                'subtitle' => 'Kiamori Academy',
+                'file' => 'SERTIFIKAT PROVIDER P3K.pdf',
+            ],
+        ],
+    ],
     'microsoft' => [
         'name' => 'Microsoft',
         'organization' => 'Microsoft Office dan Produktivitas Digital',
