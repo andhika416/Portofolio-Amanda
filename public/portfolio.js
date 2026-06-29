@@ -1,5 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
   const htmlElement = document.documentElement;
+  const introLoader = document.querySelector('.intro-loader');
+
+  if (introLoader) {
+    let introRemoved = false;
+
+    const removeIntro = () => {
+      if (introRemoved) return;
+      introRemoved = true;
+      document.body.classList.remove('intro-active');
+      introLoader.remove();
+    };
+
+    introLoader.addEventListener('animationend', (event) => {
+      if (event.target === introLoader && event.animationName === 'intro-loader-exit') {
+        removeIntro();
+      }
+    });
+
+    window.setTimeout(removeIntro, 4600);
+  }
+
   const languageToggleButtons = Array.from(
     document.querySelectorAll('[data-lang-toggle]')
   );
@@ -11,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
   );
   const languageStorageKey = 'portfolio-language';
   const themeStorageKey = 'portfolio-theme';
+  const langSwitch = document.querySelector('.lang-switch');
+  const langSwitchTrigger = document.querySelector('.lang-switch-trigger');
+  const langSwitchMenu = document.querySelector('.lang-switch-menu');
+  const langSwitchCurrent = document.querySelector('.lang-switch-current');
   const themeSwitch = document.querySelector('.theme-switch');
   const themeSwitchTrigger = document.querySelector('.theme-switch-trigger');
   const themeSwitchMenu = document.querySelector('.theme-switch-menu');
@@ -56,6 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
       button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
 
+    if (langSwitchCurrent) {
+      langSwitchCurrent.textContent = normalizedLanguage === 'en' ? 'EN' : 'ID';
+    }
+
     window.localStorage.setItem(languageStorageKey, normalizedLanguage);
   };
 
@@ -66,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', () => {
       const nextLanguage = button.getAttribute('data-lang-toggle') || 'in';
       applyLanguage(nextLanguage);
+      closeLangMenu();
     });
   });
 
@@ -90,8 +120,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const openThemeMenu = () => {
     if (!themeSwitchTrigger || !themeSwitchMenu) return;
+    closeLangMenu();
     themeSwitchTrigger.setAttribute('aria-expanded', 'true');
     themeSwitchMenu.hidden = false;
+  };
+
+  const closeLangMenu = () => {
+    if (!langSwitchTrigger || !langSwitchMenu) return;
+    langSwitchTrigger.setAttribute('aria-expanded', 'false');
+    langSwitchMenu.hidden = true;
+  };
+
+  const openLangMenu = () => {
+    if (!langSwitchTrigger || !langSwitchMenu) return;
+    closeThemeMenu();
+    langSwitchTrigger.setAttribute('aria-expanded', 'true');
+    langSwitchMenu.hidden = false;
   };
 
   const initialTheme = window.localStorage.getItem(themeStorageKey) || 'light';
@@ -108,6 +152,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  langSwitchTrigger?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isExpanded =
+      langSwitchTrigger.getAttribute('aria-expanded') === 'true';
+    if (isExpanded) {
+      closeLangMenu();
+    } else {
+      openLangMenu();
+    }
+  });
+
   themeOptionButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const nextTheme = button.getAttribute('data-theme-value') || 'light';
@@ -120,10 +175,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!themeSwitch?.contains(event.target)) {
       closeThemeMenu();
     }
+    if (!langSwitch?.contains(event.target)) {
+      closeLangMenu();
+    }
   });
 
   const animatedElements = document.querySelectorAll('.animate');
   const siteHeader = document.querySelector('.site-header');
+  const siteNav = document.querySelector('.site-nav');
   const navLinks = document.querySelectorAll('.site-nav a');
   const sections = Array.from(document.querySelectorAll('main section[id]'));
 
@@ -143,11 +202,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   animatedElements.forEach((element) => observer.observe(element));
 
+  const updateNavIndicator = (activeLink) => {
+    if (!siteNav || !activeLink) return;
+
+    siteNav.style.setProperty('--nav-indicator-x', `${activeLink.offsetLeft}px`);
+    siteNav.style.setProperty('--nav-indicator-y', `${activeLink.offsetTop}px`);
+    siteNav.style.setProperty('--nav-indicator-width', `${activeLink.offsetWidth}px`);
+    siteNav.style.setProperty('--nav-indicator-height', `${activeLink.offsetHeight}px`);
+  };
+
   const setActiveSection = (sectionId) => {
+    let activeLink = null;
+
     navLinks.forEach((link) => {
-      const isActive = link.getAttribute('href') === `#${sectionId}`;
+      const href = link.getAttribute('href') || '';
+      const hashIndex = href.indexOf('#');
+      const linkHash = hashIndex >= 0 ? href.slice(hashIndex) : href;
+      const isActive = linkHash === `#${sectionId}`;
       link.classList.toggle('active', isActive);
+
+      if (isActive) {
+        link.setAttribute('aria-current', 'page');
+        activeLink = link;
+      } else {
+        link.removeAttribute('aria-current');
+      }
     });
+
+    updateNavIndicator(activeLink);
 
     const activeSection = document.getElementById(sectionId);
     const isLightSection = activeSection?.classList.contains('light');
@@ -171,10 +253,28 @@ document.addEventListener('DOMContentLoaded', function () {
     return top;
   };
 
+  let isNavigationScrollLocked = false;
+  let navigationScrollTimer = null;
+
+  const releaseNavigationScroll = () => {
+    isNavigationScrollLocked = false;
+    window.clearTimeout(navigationScrollTimer);
+    navigationScrollTimer = null;
+    updateActiveSection();
+  };
+
+  const scheduleNavigationRelease = (delay = 140) => {
+    window.clearTimeout(navigationScrollTimer);
+    navigationScrollTimer = window.setTimeout(releaseNavigationScroll, delay);
+  };
+
   const scrollToSection = (targetElement) => {
     const scrollAnchor =
       targetElement.querySelector('.section-header') || targetElement;
     const targetTop = getDocumentTop(scrollAnchor) - getHeaderOffset();
+
+    isNavigationScrollLocked = true;
+    scheduleNavigationRelease(900);
 
     window.scrollTo({
       top: Math.max(targetTop, 0),
@@ -198,8 +298,32 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   updateActiveSection();
-  window.addEventListener('scroll', updateActiveSection, { passive: true });
+  window.requestAnimationFrame(() => siteNav?.classList.add('indicator-ready'));
+  window.addEventListener('scroll', () => {
+    if (isNavigationScrollLocked) {
+      scheduleNavigationRelease();
+      return;
+    }
+
+    updateActiveSection();
+  }, { passive: true });
   window.addEventListener('resize', updateActiveSection);
+
+  const cancelNavigationScrollLock = () => {
+    if (isNavigationScrollLocked) {
+      releaseNavigationScroll();
+    }
+  };
+
+  window.addEventListener('wheel', cancelNavigationScrollLock, { passive: true });
+  window.addEventListener('touchstart', cancelNavigationScrollLock, { passive: true });
+
+  if (siteNav && 'ResizeObserver' in window) {
+    const navResizeObserver = new ResizeObserver(() => {
+      updateNavIndicator(siteNav.querySelector('a.active'));
+    });
+    navResizeObserver.observe(siteNav);
+  }
 
   navLinks.forEach((link) => {
     link.addEventListener('click', function (event) {

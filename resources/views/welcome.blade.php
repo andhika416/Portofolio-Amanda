@@ -7,13 +7,51 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem('portfolio-theme') === 'dark' ? 'dark' : 'light';
+            } catch (error) {
+                document.documentElement.dataset.theme = 'light';
+            }
+        </script>
         <link rel="stylesheet" href="/portfolio.css">
     </head>
-    <body>
+    <body class="intro-active">
         @php
             $imagePath = static fn (string $file): string => '/images/' . rawurlencode($file);
             $galleryImages = ['1.JPG', '2.JPG', '3.jpg', '4.JPG', '5.JPG', '6.JPG'];
         @endphp
+        <div class="intro-loader" role="status" aria-label="Memuat portofolio Amanda Sasmi Hanifa">
+            <div class="intro-loader-inner">
+                <div class="intro-name" aria-hidden="true">
+                    <span class="intro-word intro-word-first">
+                        <span class="intro-letter" style="--letter-index: 0">A</span>
+                        <span class="intro-letter" style="--letter-index: 1">M</span>
+                        <span class="intro-letter" style="--letter-index: 2">A</span>
+                        <span class="intro-letter" style="--letter-index: 3">N</span>
+                        <span class="intro-letter" style="--letter-index: 4">D</span>
+                        <span class="intro-letter" style="--letter-index: 5">A</span>
+                    </span>
+                    <span class="intro-word intro-word-last">
+                        <span class="intro-letter" style="--letter-index: 6">S</span>
+                        <span class="intro-letter" style="--letter-index: 7">A</span>
+                        <span class="intro-letter" style="--letter-index: 8">S</span>
+                        <span class="intro-letter" style="--letter-index: 9">M</span>
+                        <span class="intro-letter" style="--letter-index: 10">I</span>
+                        <span class="intro-name-space" aria-hidden="true"></span>
+                        <span class="intro-letter" style="--letter-index: 11">H</span>
+                        <span class="intro-letter" style="--letter-index: 12">A</span>
+                        <span class="intro-letter" style="--letter-index: 13">N</span>
+                        <span class="intro-letter" style="--letter-index: 14">I</span>
+                        <span class="intro-letter" style="--letter-index: 15">F</span>
+                        <span class="intro-letter" style="--letter-index: 16">A</span>
+                    </span>
+                </div>
+                <span class="intro-loader-line" aria-hidden="true"></span>
+                <span class="intro-loader-caption" aria-hidden="true">PORTFOLIO</span>
+            </div>
+        </div>
         @include('partials.navbar')
 
         <main>
