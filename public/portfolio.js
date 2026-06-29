@@ -238,6 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const getHeaderOffset = () => {
     if (!siteHeader) return 0;
+    if (window.matchMedia('(max-width: 860px)').matches) return 16;
     return siteHeader.offsetHeight + 16;
   };
 
