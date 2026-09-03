@@ -1,0 +1,6 @@
+/vendor
+.git
+.env
+.env.backup
+.env.production
+tests
