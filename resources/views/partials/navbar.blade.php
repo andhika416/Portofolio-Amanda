@@ -4,13 +4,19 @@
 @endphp
 <header class="site-header">
     <div class="container header-inner">
-        <a href="{{ $homeUrl }}" class="brand" aria-label="Amanda Sasmi Hanifa">
-            <span class="brand-mark">AS<span class="brand-mark-dot">.</span></span>
-            <span class="brand-divider" aria-hidden="true"></span>
+        <a href="{{ $sectionPrefix }}#hero" class="brand" aria-label="Amanda Sasmi Hanifa">
+            <span class="brand-avatar">AS</span>
+            <span class="brand-name">
+                <span class="brand-first">AMANDA</span>
+                <span class="brand-last">SASMI</span>
+            </span>
+            <span class="brand-monogram" aria-hidden="true">
+                <span class="brand-monogram-text">AS</span><span class="brand-monogram-dot">.</span>
+            </span>
         </a>
         <nav class="site-nav" aria-label="Navigasi halaman">
             <span class="nav-active-indicator" aria-hidden="true"></span>
-            <a href="{{ $sectionPrefix }}#hero">
+            <a href="{{ $sectionPrefix }}#hero" class="nav-item-hero">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5.5h-5V21H5a1 1 0 0 1-1-1v-9.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 <span data-lang-in="Beranda" data-lang-en="Home">Beranda</span>
             </a>
@@ -28,7 +34,7 @@
             </a>
             <a href="{{ $sectionPrefix }}#skills">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.9 4.8 5.1.4-3.9 3.2 1.3 5-4.4-2.8-4.4 2.8 1.3-5-3.9-3.2 5.1-.4L12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span data-lang-in="Kemampuan" data-lang-en="Skills">Kemampuan</span>
+                <span data-lang-in="Keahlian" data-lang-en="Skills">Keahlian</span>
             </a>
             <a href="{{ $sectionPrefix }}#gallery">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A1.5 1.5 0 0 1 5.5 5h13A1.5 1.5 0 0 1 20 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5v-11Zm4 8 2.2-2.2a1 1 0 0 1 1.4 0l1.8 1.8 2.4-2.4a1 1 0 0 1 1.4 0L20 14.5M8.5 9A1.5 1.5 0 1 0 7 7.5 1.5 1.5 0 0 0 8.5 9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -36,7 +42,7 @@
             </a>
             <a href="{{ $sectionPrefix }}#certifications">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a4.5 4.5 0 1 0-4.5-4.5 4.5 4.5 0 0 0 4.5 4.5Zm0 0 4.5 5.5 1-4 4-.8-5.4-3.2M12 15.5l-4.5 5.5-1-4-4-.8 5.4-3.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span data-lang-in="Sertifikasi" data-lang-en="Certifications">Sertifikasi</span>
+                <span data-lang-in="Sertifikat" data-lang-en="Certifications">Sertifikat</span>
             </a>
             <a href="{{ $sectionPrefix }}#contact">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6.5A1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 17.5v-11Zm3 3h8m-8 4h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -85,5 +91,17 @@
                 </div>
             </div>
         </div>
+        <button
+            type="button"
+            class="mobile-nav-toggle"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
     </div>
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
 </header>

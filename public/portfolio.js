@@ -86,6 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.localStorage.setItem(languageStorageKey, normalizedLanguage);
+
+    window.requestAnimationFrame(() => {
+      const nav = document.querySelector('.site-nav');
+      if (nav) {
+        updateNavIndicator(nav.querySelector('a.active'));
+      }
+    });
   };
 
   const initialLanguage = window.localStorage.getItem(languageStorageKey) || 'in';
@@ -185,6 +192,55 @@ document.addEventListener('DOMContentLoaded', function () {
   const siteNav = document.querySelector('.site-nav');
   const navLinks = document.querySelectorAll('.site-nav a');
   const sections = Array.from(document.querySelectorAll('main section[id]'));
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const mobileNavBackdrop = document.querySelector('.mobile-nav-backdrop');
+
+  const closeMobileNav = () => {
+    if (!siteHeader?.classList.contains('mobile-nav-open')) return;
+    siteHeader.classList.remove('mobile-nav-open');
+    if (mobileNavToggle) {
+      mobileNavToggle.setAttribute('aria-expanded', 'false');
+      mobileNavToggle.setAttribute('aria-label', 'Buka menu navigasi');
+    }
+  };
+
+  const openMobileNav = () => {
+    siteHeader?.classList.add('mobile-nav-open');
+    if (mobileNavToggle) {
+      mobileNavToggle.setAttribute('aria-expanded', 'true');
+      mobileNavToggle.setAttribute('aria-label', 'Tutup menu navigasi');
+    }
+  };
+
+  if (mobileNavToggle) {
+    mobileNavToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isOpen = siteHeader?.classList.contains('mobile-nav-open');
+      if (isOpen) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+  }
+
+  if (mobileNavBackdrop) {
+    mobileNavBackdrop.addEventListener('click', () => {
+      closeMobileNav();
+    });
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMobileNav();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 860) {
+      closeMobileNav();
+    }
+  });
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -203,8 +259,15 @@ document.addEventListener('DOMContentLoaded', function () {
   animatedElements.forEach((element) => observer.observe(element));
 
   const updateNavIndicator = (activeLink) => {
-    if (!siteNav || !activeLink) return;
+    if (!siteNav) return;
+    if (!activeLink || activeLink.offsetWidth === 0) {
+      siteNav.style.setProperty('--nav-indicator-width', '0px');
+      siteNav.style.setProperty('--nav-indicator-height', '0px');
+      siteNav.classList.remove('has-active-indicator');
+      return;
+    }
 
+    siteNav.classList.add('has-active-indicator');
     siteNav.style.setProperty('--nav-indicator-x', `${activeLink.offsetLeft}px`);
     siteNav.style.setProperty('--nav-indicator-y', `${activeLink.offsetTop}px`);
     siteNav.style.setProperty('--nav-indicator-width', `${activeLink.offsetWidth}px`);
@@ -238,8 +301,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const getHeaderOffset = () => {
     if (!siteHeader) return 0;
-    if (window.matchMedia('(max-width: 860px)').matches) return 16;
-    return siteHeader.offsetHeight + 16;
+    if (window.matchMedia('(max-width: 860px)').matches) {
+      const inner = siteHeader.querySelector('.header-inner');
+      const headerHeight = inner ? inner.offsetHeight : 56;
+      return 12 + headerHeight + 14;
+    }
+    const inner = siteHeader.querySelector('.header-inner');
+    const headerHeight = inner ? inner.offsetHeight : 62;
+    return 14 + headerHeight + 4 + 16;
   };
 
   const getDocumentTop = (element) => {
@@ -270,25 +339,32 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   const scrollToSection = (targetElement) => {
-    const scrollAnchor =
-      targetElement.querySelector('.section-header') || targetElement;
-    const targetTop = getDocumentTop(scrollAnchor) - getHeaderOffset();
+    if (!targetElement) return;
+    const targetTop = getDocumentTop(targetElement) - getHeaderOffset();
 
     isNavigationScrollLocked = true;
-    scheduleNavigationRelease(900);
+    scheduleNavigationRelease(800);
 
     window.scrollTo({
-      top: Math.max(targetTop, 0),
+      top: Math.max(Math.round(targetTop), 0),
       behavior: 'smooth',
     });
   };
 
   const updateActiveSection = () => {
-    const scrollPosition = window.scrollY + getHeaderOffset();
+    const scrollPositionBottom = window.innerHeight + window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight;
+    if (documentHeight - scrollPositionBottom < 40 && sections.length > 0) {
+      setActiveSection(sections[sections.length - 1].id);
+      return;
+    }
+
+    const scrollThreshold = window.scrollY + getHeaderOffset() + 20;
     let currentSection = sections[0];
 
     sections.forEach((section) => {
-      if (scrollPosition >= section.offsetTop) {
+      const sectionTop = getDocumentTop(section);
+      if (scrollThreshold >= sectionTop) {
         currentSection = section;
       }
     });
@@ -324,6 +400,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateNavIndicator(siteNav.querySelector('a.active'));
     });
     navResizeObserver.observe(siteNav);
+    navLinks.forEach((link) => navResizeObserver.observe(link));
   }
 
   navLinks.forEach((link) => {
@@ -334,6 +411,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       event.preventDefault();
+      closeMobileNav();
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         setActiveSection(targetElement.id);

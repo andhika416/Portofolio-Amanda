@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-page-title-in="Portofolio | Amanda" data-page-title-en="Portfolio | Amanda">
     <head>
         <meta charset="utf-8">
@@ -15,7 +15,7 @@
                 document.documentElement.dataset.theme = 'light';
             }
         </script>
-        <link rel="stylesheet" href="/portfolio.css">
+        <link rel="stylesheet" href="/portfolio.css?v=1793270002">
     </head>
     <body class="intro-active">
         @php
@@ -156,79 +156,397 @@
 
             <!-- Experience Section -->
             <section id="experience" class="section experience-section">
-                <div class="container section-header animate">
-                    <h2 data-lang-in="Pengalaman" data-lang-en="Experience">Pengalaman</h2>
+                <div class="container section-header exp-section-header animate">
+                    <div class="exp-badge-pill">
+                        <svg class="exp-badge-pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                        <span data-lang-in="Karier & Pengalaman" data-lang-en="Career & Experience">Karier & Pengalaman</span>
+                    </div>
+                    <h2 class="exp-section-title" data-lang-in="Perjalanan Profesional & Riset" data-lang-en="Professional & Research Journey">Perjalanan Profesional & Riset</h2>
                 </div>
-                <div class="container timeline animate">
-                    <div class="timeline-column">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Magang (2025-2026)" data-lang-en="Internship (2025-2026)">Magang (2025-2026)</span>
-                                <h3>Balai Keselamatan dan Kesehatan Kerja Surabaya</h3>
-                                <p class="timeline-role" data-lang-in="Penguji Lingkungan Kerja" data-lang-en="Work Environment Tester">Penguji Lingkungan Kerja</p>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Menerapkan peraturan perundang-undangan dalam pengujian keselamatan dan kesehatan kerja." data-lang-en="Applied laws and regulations in occupational health and safety testing.">Menerapkan peraturan perundang-undangan dalam pengujian keselamatan dan kesehatan kerja.</li>
-                                    <li data-lang-in="Melakukan identifikasi potensi bahaya lingkungan kerja." data-lang-en="Identified potential hazards in the work environment.">Melakukan identifikasi potensi bahaya lingkungan kerja.</li>
-                                    <li data-lang-in="Melakukan pengukuran faktor fisika lingkungan kerja." data-lang-en="Conducted measurements of physical factors in the work environment.">Melakukan pengukuran faktor fisika lingkungan kerja.</li>
-                                    <li data-lang-in="Melakukan pengujian faktor kimia lingkungan kerja." data-lang-en="Conducted testing of chemical factors in the work environment.">Melakukan pengujian faktor kimia lingkungan kerja.</li>
-                                    <li data-lang-in="Mengelola data, interpretasi hasil, dan penyusunan laporan hasil pengujian K3." data-lang-en="Managed data, interpreted results, and prepared occupational health and safety testing reports.">Mengelola data, interpretasi hasil, dan penyusunan laporan hasil pengujian K3.</li>
-                                    <li data-lang-in="Penerapan prinsip higiene inhigien." data-lang-en="Applied industrial hygiene principles.">Penerapan prinsip higiene inhigien.</li>
-                                    <li data-lang-in="Mengelola fasilitas dan tindakan tanggap darurat." data-lang-en="Managed facilities and emergency response actions.">Mengelola fasilitas dan tindakan tanggap darurat.</li>
-                                </ul>
+
+                <div class="container exp-cards-list animate">
+                    <!-- Experience 1: Balai K3 Surabaya -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-title-block">
+                                <h3 class="exp-role" data-lang-in="Penguji Lingkungan Kerja" data-lang-en="Work Environment Tester">Penguji Lingkungan Kerja</h3>
+                                <p class="exp-company" data-lang-in="Balai Keselamatan dan Kesehatan Kerja Surabaya (Balai K3)" data-lang-en="Surabaya Occupational Health & Safety Center (Balai K3)">Balai Keselamatan dan Kesehatan Kerja Surabaya (Balai K3)</p>
+                            </div>
+                            <div class="exp-meta-badges">
+                                <span class="exp-meta-badge exp-badge-date">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    <span data-lang-in="2025 - 2026" data-lang-en="2025 - 2026">2025 - 2026</span>
+                                </span>
+                                <span class="exp-meta-badge exp-badge-location">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-lang-in="Surabaya, Jawa Timur" data-lang-en="Surabaya, East Java">Surabaya, Jawa Timur</span>
+                                </span>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Asisten Dosen (2025)" data-lang-en="Teaching Assistant (2025)">Asisten Dosen (2025)</span>
-                                <h3>Universitas Negeri Malang</h3>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan dan kesehatan kerja di laboratorium." data-lang-en="Assisted lecturers by guiding and leading laboratory practice sessions for around 120 students, including occupational health and safety supervision in the laboratory.">Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan dan kesehatan kerja di laboratorium.</li>
-                                    <li data-lang-in="Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa." data-lang-en="Prepared teaching materials, presented complex scientific concepts, and evaluated student understanding.">Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa.</li>
-                                </ul>
+
+                        <ul class="exp-points">
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Menerapkan peraturan perundang-undangan dalam pengujian keselamatan dan kesehatan kerja." data-lang-en="Applied laws and regulations in occupational health and safety testing.">Menerapkan peraturan perundang-undangan dalam pengujian keselamatan dan kesehatan kerja.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Melakukan identifikasi potensi bahaya lingkungan kerja." data-lang-en="Identified potential hazards in the work environment.">Melakukan identifikasi potensi bahaya lingkungan kerja.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Melakukan pengukuran faktor fisika lingkungan kerja." data-lang-en="Conducted measurements of physical factors in the work environment.">Melakukan pengukuran faktor fisika lingkungan kerja.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Melakukan pengujian faktor kimia lingkungan kerja." data-lang-en="Conducted testing of chemical factors in the work environment.">Melakukan pengujian faktor kimia lingkungan kerja.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Mengelola data, interpretasi hasil, dan penyusunan laporan hasil pengujian K3." data-lang-en="Managed data, interpreted results, and prepared occupational health and safety testing reports.">Mengelola data, interpretasi hasil, dan penyusunan laporan hasil pengujian K3.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Penerapan prinsip higiene industri." data-lang-en="Applied industrial hygiene principles.">Penerapan prinsip higiene industri.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Mengelola fasilitas dan tindakan tanggap darurat." data-lang-en="Managed facilities and emergency response actions.">Mengelola fasilitas dan tindakan tanggap darurat.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-card-footer">
+                            <span class="exp-tags-label" data-lang-in="Teknologi / Fokus:" data-lang-en="Focus & Skills:">Teknologi / Fokus:</span>
+                            <div class="exp-tags-list">
+                                <span class="exp-tag" data-lang-in="Pengujian K3" data-lang-en="OHS Testing">Pengujian K3</span>
+                                <span class="exp-tag" data-lang-in="Faktor Fisika & Kimia" data-lang-en="Physical & Chemical Factors">Faktor Fisika & Kimia</span>
+                                <span class="exp-tag" data-lang-in="Higiene Industri" data-lang-en="Industrial Hygiene">Higiene Industri</span>
+                                <span class="exp-tag" data-lang-in="Tanggap Darurat" data-lang-en="Emergency Response">Tanggap Darurat</span>
+                                <span class="exp-tag" data-lang-in="Identifikasi Bahaya" data-lang-en="Hazard Identification">Identifikasi Bahaya</span>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Riset (2024)" data-lang-en="Research (2024)">Riset (2024)</span>
-                                <h3 data-lang-in="Kesehatan Lingkungan" data-lang-en="Environmental Health">Kesehatan Lingkungan</h3>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu." data-lang-en="Surveyed pesticide and PPE usage behavior in pest control as well as health complaints among vegetable farmers in Junrejo Village, Batu City.">Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu.</li>
-                                    <li data-lang-in="Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor." data-lang-en="Analyzed residents' health issues in Heritage Village, Malang City, related to indoor air quality.">Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor.</li>
-                                </ul>
+                    </article>
+
+                    <!-- Experience 2: Asisten Dosen Universitas Negeri Malang -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-title-block">
+                                <h3 class="exp-role" data-lang-in="Asisten Dosen Praktikum" data-lang-en="Laboratory Teaching Assistant">Asisten Dosen Praktikum</h3>
+                                <p class="exp-company" data-lang-in="Universitas Negeri Malang - Departemen Biologi" data-lang-en="State University of Malang - Department of Biology">Universitas Negeri Malang - Departemen Biologi</p>
+                            </div>
+                            <div class="exp-meta-badges">
+                                <span class="exp-meta-badge exp-badge-date">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    <span data-lang-in="2025" data-lang-en="2025">2025</span>
+                                </span>
+                                <span class="exp-meta-badge exp-badge-location">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-lang-in="Malang, Jawa Timur" data-lang-en="Malang, East Java">Malang, Jawa Timur</span>
+                                </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="timeline-column">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Magang • 2024" data-lang-en="Internship • 2024">Magang • 2024</span>
-                                <h3>Dinas Lingkungan Hidup Kab. Nganjuk</h3>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, serta analisis parameter fisika, kimia, dan biologi sesuai standar pengujian lingkungan." data-lang-en="Worked in an environmental laboratory focusing on sample preparation, sampling, and the analysis of physical, chemical, and biological parameters in accordance with environmental testing standards.">Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, serta analisis parameter fisika, kimia, dan biologi sesuai standar pengujian lingkungan.</li>
-                                    <li data-lang-in="Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) di laboratorium, termasuk penggunaan APD, penanganan bahan kimia, dan prosedur kerja aman untuk meminimalkan risiko paparan." data-lang-en="Applied occupational health and safety principles in the laboratory, including the use of PPE, chemical handling, and safe work procedures to minimize exposure risks.">Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) di laboratorium, termasuk penggunaan APD, penanganan bahan kimia, dan prosedur kerja aman untuk meminimalkan risiko paparan.</li>
-                                    <li data-lang-in="Melakukan pengolahan dan analisis data hasil pengujian lingkungan secara akurat dan sistematis." data-lang-en="Processed and analyzed environmental testing data accurately and systematically.">Melakukan pengolahan dan analisis data hasil pengujian lingkungan secara akurat dan sistematis.</li>
-                                    <li data-lang-in="Riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk." data-lang-en="Research: Analysis of textile industry liquid waste quality in micro, small, and medium enterprises at the Nganjuk Regency Environmental Laboratory UPTD.">Riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk.</li>
-                                </ul>
+
+                        <ul class="exp-points">
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan dan kesehatan kerja di laboratorium." data-lang-en="Assisted lecturers by guiding and leading laboratory practice sessions for around 120 students, including occupational health and safety supervision in the laboratory.">Membantu dosen dengan membimbing dan memimpin sesi praktik laboratorium untuk sekitar 120 mahasiswa, termasuk pengawasan keselamatan dan kesehatan kerja di laboratorium.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa." data-lang-en="Prepared teaching materials, presented complex scientific concepts, and evaluated student understanding.">Menyiapkan bahan ajar, mempresentasikan konsep ilmiah yang kompleks, dan menilai pemahaman mahasiswa.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-card-footer">
+                            <span class="exp-tags-label" data-lang-in="Teknologi / Fokus:" data-lang-en="Focus & Skills:">Teknologi / Fokus:</span>
+                            <div class="exp-tags-list">
+                                <span class="exp-tag" data-lang-in="Asisten Laboratorium" data-lang-en="Laboratory Assistant">Asisten Laboratorium</span>
+                                <span class="exp-tag" data-lang-in="Pengawasan K3 Lab" data-lang-en="Lab Safety Supervision">Pengawasan K3 Lab</span>
+                                <span class="exp-tag" data-lang-in="Keanekaragaman Hewan" data-lang-en="Animal Diversity">Keanekaragaman Hewan</span>
+                                <span class="exp-tag" data-lang-in="Bimbingan Mahasiswa" data-lang-en="Student Mentoring">Bimbingan Mahasiswa</span>
+                                <span class="exp-tag" data-lang-in="Evaluasi Praktikum" data-lang-en="Practical Assessment">Evaluasi Praktikum</span>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-card">
-                                <span class="timeline-meta" data-lang-in="Proyek Riset Mikrobiologi • 2024 (dengan penerapan K3)" data-lang-en="Microbiology Research Project • 2024 (with OHS implementation)">Proyek Riset Mikrobiologi • 2024 (dengan penerapan K3)</span>
-                                <h3 data-lang-in="Riset Mikrobiologi" data-lang-en="Microbiology Research">Riset Mikrobiologi</h3>
-                                <ul class="timeline-list">
-                                    <li data-lang-in="Penelitian pembuatan yoghurt dengan penambahan sari wortel sebagai bahan dasar, dengan penerapan K3 di laboratorium mikrobiologi, termasuk penggunaan APD dan prosedur kerja aseptik selama proses fermentasi dan analisis." data-lang-en="Conducted research on yogurt production with carrot extract as the base ingredient, applying OHS practices in the microbiology laboratory, including the use of PPE and aseptic procedures during fermentation and analysis.">Penelitian pembuatan yoghurt dengan penambahan sari wortel sebagai bahan dasar, dengan penerapan K3 di laboratorium mikrobiologi, termasuk penggunaan APD dan prosedur kerja aseptik selama proses fermentasi dan analisis.</li>
-                                    <li data-lang-in="Uji kualitas mikrobiologi makanan dalam kemasan kaleng berdasarkan Angka Lempeng Total (ALT) koloni bakteri dengan memperhatikan aspek K3, seperti penanganan sampel biologis secara aman dan pengelolaan risiko kontaminasi." data-lang-en="Tested the microbiological quality of canned food based on Total Plate Count (TPC) of bacterial colonies while observing OHS aspects, such as safe biological sample handling and contamination risk management.">Uji kualitas mikrobiologi makanan dalam kemasan kaleng berdasarkan Angka Lempeng Total (ALT) koloni bakteri dengan memperhatikan aspek K3, seperti penanganan sampel biologis secara aman dan pengelolaan risiko kontaminasi.</li>
-                                    <li data-lang-in="Pewarnaan Gram serta pengukuran sel bakteri dengan penerapan standar K3 laboratorium, termasuk penggunaan bahan kimia secara aman dan pembuangan limbah sesuai prosedur." data-lang-en="Performed Gram staining and bacterial cell measurement while applying laboratory OHS standards, including safe chemical use and proper waste disposal procedures.">Pewarnaan Gram serta pengukuran sel bakteri dengan penerapan standar K3 laboratorium, termasuk penggunaan bahan kimia secara aman dan pembuangan limbah sesuai prosedur.</li>
-                                    <li data-lang-in="Uji kualitas mikrobiologi air minum dalam kemasan menggunakan metode Most Probable Number (MPN) Coliform dengan memperhatikan prinsip K3 untuk mencegah paparan mikroorganisme dan menjaga keamanan kerja di laboratorium." data-lang-en="Tested the microbiological quality of packaged drinking water using the Most Probable Number (MPN) Coliform method while observing OHS principles to prevent microorganism exposure and maintain laboratory safety.">Uji kualitas mikrobiologi air minum dalam kemasan menggunakan metode Most Probable Number (MPN) Coliform dengan memperhatikan prinsip K3 untuk mencegah paparan mikroorganisme dan menjaga keamanan kerja di laboratorium.</li>
-                                </ul>
+                    </article>
+
+                    <!-- Experience 3: Dinas Lingkungan Hidup Kab. Nganjuk -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-title-block">
+                                <h3 class="exp-role" data-lang-in="Tenaga Laboratorium Lingkungan" data-lang-en="Environmental Laboratory Intern">Tenaga Laboratorium Lingkungan</h3>
+                                <p class="exp-company" data-lang-in="Dinas Lingkungan Hidup Kab. Nganjuk (UPTD Laboratorium Lingkungan)" data-lang-en="Environmental Agency of Nganjuk Regency (UPTD Environmental Lab)">Dinas Lingkungan Hidup Kab. Nganjuk (UPTD Laboratorium Lingkungan)</p>
+                            </div>
+                            <div class="exp-meta-badges">
+                                <span class="exp-meta-badge exp-badge-date">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    <span data-lang-in="2024" data-lang-en="2024">2024</span>
+                                </span>
+                                <span class="exp-meta-badge exp-badge-location">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-lang-in="Nganjuk, Jawa Timur" data-lang-en="Nganjuk, East Java">Nganjuk, Jawa Timur</span>
+                                </span>
                             </div>
                         </div>
-                    </div>
+
+                        <ul class="exp-points">
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, serta analisis parameter fisika, kimia, dan biologi sesuai standar pengujian lingkungan." data-lang-en="Worked in an environmental laboratory focusing on sample preparation, sampling, and the analysis of physical, chemical, and biological parameters in accordance with environmental testing standards.">Bekerja di laboratorium lingkungan dengan fokus pada persiapan sampel, pengambilan sampel, serta analisis parameter fisika, kimia, dan biologi sesuai standar pengujian lingkungan.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) di laboratorium, termasuk penggunaan APD, penanganan bahan kimia, dan prosedur kerja aman untuk meminimalkan risiko paparan." data-lang-en="Applied occupational health and safety principles in the laboratory, including the use of PPE, chemical handling, and safe work procedures to minimize exposure risks.">Menerapkan prinsip Keselamatan dan Kesehatan Kerja (K3) di laboratorium, termasuk penggunaan APD, penanganan bahan kimia, dan prosedur kerja aman untuk meminimalkan risiko paparan.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Melakukan pengolahan dan analisis data hasil pengujian lingkungan secara akurat dan sistematis." data-lang-en="Processed and analyzed environmental testing data accurately and systematically.">Melakukan pengolahan dan analisis data hasil pengujian lingkungan secara akurat dan sistematis.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk." data-lang-en="Research: Analysis of textile industry liquid waste quality in micro, small, and medium enterprises at the Nganjuk Regency Environmental Laboratory UPTD.">Riset: Analisis kualitas limbah cair industri tekstil pada skala usaha mikro kecil menengah di UPTD Laboratorium Lingkungan Kabupaten Nganjuk.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-card-footer">
+                            <span class="exp-tags-label" data-lang-in="Teknologi / Fokus:" data-lang-en="Focus & Skills:">Teknologi / Fokus:</span>
+                            <div class="exp-tags-list">
+                                <span class="exp-tag" data-lang-in="Laboratorium Lingkungan" data-lang-en="Environmental Lab">Laboratorium Lingkungan</span>
+                                <span class="exp-tag" data-lang-in="Analisis Limbah Cair" data-lang-en="Wastewater Analysis">Analisis Limbah Cair</span>
+                                <span class="exp-tag" data-lang-in="Uji Fisika & Kimia" data-lang-en="Physicochemical Testing">Uji Fisika & Kimia</span>
+                                <span class="exp-tag" data-lang-in="Prosedur APD & K3" data-lang-en="PPE & Safety Procedures">Prosedur APD & K3</span>
+                                <span class="exp-tag" data-lang-in="Sampling Air" data-lang-en="Water Sampling">Sampling Air</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Experience 4: Riset Kesehatan Lingkungan -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-title-block">
+                                <h3 class="exp-role" data-lang-in="Peneliti Kesehatan Lingkungan" data-lang-en="Environmental Health Researcher">Peneliti Kesehatan Lingkungan</h3>
+                                <p class="exp-company" data-lang-in="Riset Lapangan Kesehatan Lingkungan & Komunitas" data-lang-en="Community & Environmental Health Field Research">Riset Lapangan Kesehatan Lingkungan & Komunitas</p>
+                            </div>
+                            <div class="exp-meta-badges">
+                                <span class="exp-meta-badge exp-badge-date">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    <span data-lang-in="2024" data-lang-en="2024">2024</span>
+                                </span>
+                                <span class="exp-meta-badge exp-badge-location">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-lang-in="Batu & Malang, Jawa Timur" data-lang-en="Batu & Malang, East Java">Batu & Malang, Jawa Timur</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="exp-points">
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu." data-lang-en="Surveyed pesticide and PPE usage behavior in pest control as well as health complaints among vegetable farmers in Junrejo Village, Batu City.">Survei perilaku penggunaan pestisida dan APD dalam pengendalian hama serta keluhan kesehatan pada petani sayur di Desa Junrejo, Kota Batu.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor." data-lang-en="Analyzed residents' health issues in Heritage Village, Malang City, related to indoor air quality.">Analisis gangguan kesehatan penduduk di Kampung Heritage Kota Malang terkait kualitas udara indoor.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-card-footer">
+                            <span class="exp-tags-label" data-lang-in="Teknologi / Fokus:" data-lang-en="Focus & Skills:">Teknologi / Fokus:</span>
+                            <div class="exp-tags-list">
+                                <span class="exp-tag" data-lang-in="Survei Kesehatan" data-lang-en="Health Survey">Survei Kesehatan</span>
+                                <span class="exp-tag" data-lang-in="Penggunaan APD Petani" data-lang-en="Farmer PPE Compliance">Penggunaan APD Petani</span>
+                                <span class="exp-tag" data-lang-in="Kualitas Udara Indoor" data-lang-en="Indoor Air Quality">Kualitas Udara Indoor</span>
+                                <span class="exp-tag" data-lang-in="Analisis Risiko Lingkungan" data-lang-en="Environmental Risk Analysis">Analisis Risiko Lingkungan</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Experience 5: Proyek Riset Mikrobiologi -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-title-block">
+                                <h3 class="exp-role" data-lang-in="Peneliti Riset Mikrobiologi" data-lang-en="Microbiology Research Project Lead">Peneliti Riset Mikrobiologi</h3>
+                                <p class="exp-company" data-lang-in="Proyek Riset Mikrobiologi Terapan (dengan Penerapan Standar K3)" data-lang-en="Microbiology Research Project (with OHS Standard Implementation)">Proyek Riset Mikrobiologi Terapan (dengan Penerapan Standar K3)</p>
+                            </div>
+                            <div class="exp-meta-badges">
+                                <span class="exp-meta-badge exp-badge-date">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    <span data-lang-in="2024" data-lang-en="2024">2024</span>
+                                </span>
+                                <span class="exp-meta-badge exp-badge-location">
+                                    <svg class="exp-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <span data-lang-in="Malang, Jawa Timur" data-lang-en="Malang, East Java">Malang, Jawa Timur</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="exp-points">
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Penelitian pembuatan yoghurt dengan penambahan sari wortel sebagai bahan dasar, dengan penerapan K3 di laboratorium mikrobiologi, termasuk penggunaan APD dan prosedur kerja aseptik selama proses fermentasi dan analisis." data-lang-en="Conducted research on yogurt production with carrot extract as the base ingredient, applying OHS practices in the microbiology laboratory, including the use of PPE and aseptic procedures during fermentation and analysis.">Penelitian pembuatan yoghurt dengan penambahan sari wortel sebagai bahan dasar, dengan penerapan K3 di laboratorium mikrobiologi, termasuk penggunaan APD dan prosedur kerja aseptik selama proses fermentasi dan analisis.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Uji kualitas mikrobiologi makanan dalam kemasan kaleng berdasarkan Angka Lempeng Total (ALT) koloni bakteri dengan memperhatikan aspek K3, seperti penanganan sampel biologis secara aman dan pengelolaan risiko kontaminasi." data-lang-en="Tested the microbiological quality of canned food based on Total Plate Count (TPC) of bacterial colonies while observing OHS aspects, such as safe biological sample handling and contamination risk management.">Uji kualitas mikrobiologi makanan dalam kemasan kaleng berdasarkan Angka Lempeng Total (ALT) koloni bakteri dengan memperhatikan aspek K3, seperti penanganan sampel biologis secara aman dan pengelolaan risiko kontaminasi.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Pewarnaan Gram serta pengukuran sel bakteri dengan penerapan standar K3 laboratorium, termasuk penggunaan bahan kimia secara aman dan pembuangan limbah sesuai prosedur." data-lang-en="Performed Gram staining and bacterial cell measurement while applying laboratory OHS standards, including safe chemical use and proper waste disposal procedures.">Pewarnaan Gram serta pengukuran sel bakteri dengan penerapan standar K3 laboratorium, termasuk penggunaan bahan kimia secara aman dan pembuangan limbah sesuai prosedur.</span>
+                            </li>
+                            <li class="exp-point-item">
+                                <span class="exp-check-wrap" aria-hidden="true">
+                                    <svg class="exp-check-icon" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8.5" stroke="#10b981" stroke-width="1.8" fill="rgba(16, 185, 129, 0.08)"/>
+                                        <path d="m6.5 10 2.5 2.5 4.5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="exp-point-text" data-lang-in="Uji kualitas mikrobiologi air minum dalam kemasan menggunakan metode Most Probable Number (MPN) Coliform dengan memperhatikan prinsip K3 untuk mencegah paparan mikroorganisme dan menjaga keamanan kerja di laboratorium." data-lang-en="Tested the microbiological quality of packaged drinking water using the Most Probable Number (MPN) Coliform method while observing OHS principles to prevent microorganism exposure and maintain laboratory safety.">Uji kualitas mikrobiologi air minum dalam kemasan menggunakan metode Most Probable Number (MPN) Coliform dengan memperhatikan prinsip K3 untuk mencegah paparan mikroorganisme dan menjaga keamanan kerja di laboratorium.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-card-footer">
+                            <span class="exp-tags-label" data-lang-in="Teknologi / Fokus:" data-lang-en="Focus & Skills:">Teknologi / Fokus:</span>
+                            <div class="exp-tags-list">
+                                <span class="exp-tag" data-lang-in="Kerja Aseptik" data-lang-en="Aseptic Work">Kerja Aseptik</span>
+                                <span class="exp-tag" data-lang-in="Uji ALT & MPN" data-lang-en="TPC & MPN Testing">Uji ALT & MPN</span>
+                                <span class="exp-tag" data-lang-in="Pewarnaan Gram" data-lang-en="Gram Staining">Pewarnaan Gram</span>
+                                <span class="exp-tag" data-lang-in="K3 Mikrobiologi" data-lang-en="Microbiology OHS">K3 Mikrobiologi</span>
+                                <span class="exp-tag" data-lang-in="Manajemen Risiko Lab" data-lang-en="Lab Risk Management">Manajemen Risiko Lab</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
 
@@ -439,6 +757,6 @@
 
         @include('partials.footer')
 
-        <script src="/portfolio.js"></script>
+        <script src="/portfolio.js?v=1793268888"></script>
     </body>
 </html>
